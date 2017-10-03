@@ -1,0 +1,113 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      'b2c320254be0e038a7c784013e28e7c0' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"tpl.Loginza.login","description":"Loginza login.","editor_type":0,"category":0,"cache_type":0,"snippet":"<script type=\\"text\\/javascript\\" src=\\"http:\\/\\/loginza.ru\\/js\\/widget.js\\"><\\/script>\\n\\u0410\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u044f \\u0447\\u0435\\u0440\\u0435\\u0437 \\u0441\\u0435\\u0440\\u0432\\u0438\\u0441 Loginza:\\n<a href=\\"https:\\/\\/loginza.ru\\/api\\/widget?token_url=[[+login_url]]\\" class=\\"loginza\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/yandex.png\\" alt=\\"Yandex\\" title=\\"Yandex\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/google.png\\" alt=\\"Google\\" title=\\"Google Accounts\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/vkontakte.png\\" alt=\\"\\u0412\\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442\\u0435\\" title=\\"\\u0412\\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442\\u0435\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/mailru.png\\" alt=\\"Mail.ru\\" title=\\"Mail.ru\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/twitter.png\\" alt=\\"Twitter\\" title=\\"Twitter\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/loginza.png\\" alt=\\"Loginza\\" title=\\"Loginza\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/myopenid.png\\" alt=\\"MyOpenID\\" title=\\"MyOpenID\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/openid.png\\" alt=\\"OpenID\\" title=\\"OpenID\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/webmoney.png\\" alt=\\"WebMoney\\" title=\\"WebMoney\\">\\n<\\/a>\\n[[+error:notempty=`<div class=\\"alert alert-block alert-error\\">[[+error]]<\\/div>`]]","locked":0,"properties":null,"static":0,"static_file":"","content":"<script type=\\"text\\/javascript\\" src=\\"http:\\/\\/loginza.ru\\/js\\/widget.js\\"><\\/script>\\n\\u0410\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u044f \\u0447\\u0435\\u0440\\u0435\\u0437 \\u0441\\u0435\\u0440\\u0432\\u0438\\u0441 Loginza:\\n<a href=\\"https:\\/\\/loginza.ru\\/api\\/widget?token_url=[[+login_url]]\\" class=\\"loginza\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/yandex.png\\" alt=\\"Yandex\\" title=\\"Yandex\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/google.png\\" alt=\\"Google\\" title=\\"Google Accounts\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/vkontakte.png\\" alt=\\"\\u0412\\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442\\u0435\\" title=\\"\\u0412\\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442\\u0435\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/mailru.png\\" alt=\\"Mail.ru\\" title=\\"Mail.ru\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/twitter.png\\" alt=\\"Twitter\\" title=\\"Twitter\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/loginza.png\\" alt=\\"Loginza\\" title=\\"Loginza\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/myopenid.png\\" alt=\\"MyOpenID\\" title=\\"MyOpenID\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/openid.png\\" alt=\\"OpenID\\" title=\\"OpenID\\">\\n\\t<img src=\\"http:\\/\\/loginza.ru\\/img\\/providers\\/webmoney.png\\" alt=\\"WebMoney\\" title=\\"WebMoney\\">\\n<\\/a>\\n[[+error:notempty=`<div class=\\"alert alert-block alert-error\\">[[+error]]<\\/div>`]]"}',
+        'guid' => '9272c2d6e804a29f550fb37e8d5a5bc8',
+        'native_key' => 0,
+        'signature' => '32f2828add4ea939e2b67e8cbeba7ff9',
+      ),
+      'b835f78aa6ddac11a211b5e3b58db892' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"tpl.Loginza.logout","description":"Loginza logout.","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+photo:notempty=`<img src=\\"[[+photo]]\\" align=\\"left\\" alt=\\"username\\"\\/>`]]\\n\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442\\u0441\\u0442\\u0432\\u0443\\u044e, <b>[[+username]]<\\/b> ([[+fullname]])!\\n<br\\/>\\n<a href=\\"[[+logout_url]]\\">\\u0412\\u044b\\u0439\\u0442\\u0438<\\/a>\\n[[+error:notempty=`<div class=\\"alert alert-block alert-error\\">[[+error]]<\\/div>`]]","locked":0,"properties":null,"static":0,"static_file":"","content":"[[+photo:notempty=`<img src=\\"[[+photo]]\\" align=\\"left\\" alt=\\"username\\"\\/>`]]\\n\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442\\u0441\\u0442\\u0432\\u0443\\u044e, <b>[[+username]]<\\/b> ([[+fullname]])!\\n<br\\/>\\n<a href=\\"[[+logout_url]]\\">\\u0412\\u044b\\u0439\\u0442\\u0438<\\/a>\\n[[+error:notempty=`<div class=\\"alert alert-block alert-error\\">[[+error]]<\\/div>`]]"}',
+        'guid' => '2a0190dd91650829de325e30cdbdb909',
+        'native_key' => 0,
+        'signature' => '19f3743fd0067ae84bcd2aadf90417d1',
+      ),
+      '22bc3d997e12c7295c6818472a592486' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"tpl.Loginza.profile","description":"User profile.","editor_type":0,"category":0,"cache_type":0,"snippet":"<form action=\\"[[~[[*id]]]]\\" method=\\"post\\" class=\\"form-horizontal\\">\\n\\t<div class=\\"control-group[[+error.username:notempty=` error`]]\\">\\n\\t\\t<label class=\\"control-label\\">\\u0418\\u043c\\u044f<\\/label>\\n\\t\\t<div class=\\"controls\\">\\n\\t\\t\\t<input type=\\"text\\" name=\\"username\\" value=\\"[[+username]]\\" \\/>\\n\\t\\t\\t<span class=\\"help-inline\\">[[+error.username]]<\\/span>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n\\t\\n\\t<div class=\\"control-group[[+error.fullname:notempty=` error`]]\\">\\n\\t\\t<label class=\\"control-label\\">\\u041f\\u043e\\u043b\\u043d\\u043e\\u0435 \\u0438\\u043c\\u044f<\\/label>\\n\\t\\t<div class=\\"controls\\">\\n\\t\\t\\t<input type=\\"text\\" name=\\"fullname\\" value=\\"[[+fullname]]\\" \\/>\\n\\t\\t\\t<span class=\\"help-inline\\">[[+error.fullname]]<\\/span>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n\\t\\n\\t<div class=\\"control-group[[+error.email:notempty=` error`]]\\">\\n\\t\\t<label class=\\"control-label\\">Email<\\/label>\\n\\t\\t<div class=\\"controls\\">\\n\\t\\t\\t<input type=\\"text\\" name=\\"email\\" value=\\"[[+email]]\\" \\/>\\n\\t\\t\\t<span class=\\"help-inline\\">[[+error.email]]<\\/span>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n\\t<input type=\\"hidden\\" name=\\"action\\" value=\\"updateProfile\\" \\/>\\n\\t<div class=\\"form-actions\\">\\n\\t\\t<button type=\\"submit\\" class=\\"btn btn-primary\\">\\u041e\\u0431\\u043d\\u043e\\u0432\\u0438\\u0442\\u044c<\\/button>\\n\\t<\\/div>\\n<\\/form>\\n[[+success:is=`1`:then=`<div class=\\"alert alert-block\\">\\u041f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044c \\u0443\\u0441\\u043f\\u0435\\u0448\\u043d\\u043e \\u043e\\u0431\\u043d\\u043e\\u0432\\u043b\\u0435\\u043d<\\/div>`]]\\n[[+success:is=`0`:then=`<div class=\\"alert alert-block alert-error\\">\\u041e\\u0448\\u0438\\u0431\\u043a\\u0430 \\u043f\\u0440\\u0438 \\u043e\\u0431\\u043d\\u043e\\u0432\\u043b\\u0435\\u043d\\u0438\\u0438 \\u043f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044f<\\/div>`]]","locked":0,"properties":null,"static":0,"static_file":"","content":"<form action=\\"[[~[[*id]]]]\\" method=\\"post\\" class=\\"form-horizontal\\">\\n\\t<div class=\\"control-group[[+error.username:notempty=` error`]]\\">\\n\\t\\t<label class=\\"control-label\\">\\u0418\\u043c\\u044f<\\/label>\\n\\t\\t<div class=\\"controls\\">\\n\\t\\t\\t<input type=\\"text\\" name=\\"username\\" value=\\"[[+username]]\\" \\/>\\n\\t\\t\\t<span class=\\"help-inline\\">[[+error.username]]<\\/span>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n\\t\\n\\t<div class=\\"control-group[[+error.fullname:notempty=` error`]]\\">\\n\\t\\t<label class=\\"control-label\\">\\u041f\\u043e\\u043b\\u043d\\u043e\\u0435 \\u0438\\u043c\\u044f<\\/label>\\n\\t\\t<div class=\\"controls\\">\\n\\t\\t\\t<input type=\\"text\\" name=\\"fullname\\" value=\\"[[+fullname]]\\" \\/>\\n\\t\\t\\t<span class=\\"help-inline\\">[[+error.fullname]]<\\/span>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n\\t\\n\\t<div class=\\"control-group[[+error.email:notempty=` error`]]\\">\\n\\t\\t<label class=\\"control-label\\">Email<\\/label>\\n\\t\\t<div class=\\"controls\\">\\n\\t\\t\\t<input type=\\"text\\" name=\\"email\\" value=\\"[[+email]]\\" \\/>\\n\\t\\t\\t<span class=\\"help-inline\\">[[+error.email]]<\\/span>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n\\t<input type=\\"hidden\\" name=\\"action\\" value=\\"updateProfile\\" \\/>\\n\\t<div class=\\"form-actions\\">\\n\\t\\t<button type=\\"submit\\" class=\\"btn btn-primary\\">\\u041e\\u0431\\u043d\\u043e\\u0432\\u0438\\u0442\\u044c<\\/button>\\n\\t<\\/div>\\n<\\/form>\\n[[+success:is=`1`:then=`<div class=\\"alert alert-block\\">\\u041f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044c \\u0443\\u0441\\u043f\\u0435\\u0448\\u043d\\u043e \\u043e\\u0431\\u043d\\u043e\\u0432\\u043b\\u0435\\u043d<\\/div>`]]\\n[[+success:is=`0`:then=`<div class=\\"alert alert-block alert-error\\">\\u041e\\u0448\\u0438\\u0431\\u043a\\u0430 \\u043f\\u0440\\u0438 \\u043e\\u0431\\u043d\\u043e\\u0432\\u043b\\u0435\\u043d\\u0438\\u0438 \\u043f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044f<\\/div>`]]"}',
+        'guid' => 'dbb5946a5552b98cd8315768435e5e1f',
+        'native_key' => 0,
+        'signature' => '5000041a5be1a339676f8b2cc950be33',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'b6f8ba6391c845dee8fa3333c9a955b0' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"Loginza","description":"Loginza is an identification system that provides a single method of logging into popular web-services.","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/\\/ini_set(\'display_errors\', 1);\\n\\/\\/ini_set(\'error_reporting\', -1);\\n\\n$Loginza = $modx->getService(\'loginza\',\'Loginza\', $modx->getOption(\'core_path\').\'components\\/loginza\\/model\\/loginza\\/\',$scriptProperties);\\nif (!($Loginza instanceof Loginza)) return;\\n\\nif (empty($_REQUEST[\'action\'])) {$action = $modx->getOption(\'action\', $scriptProperties, \'loadTpl\');}\\nelse {$action = $_REQUEST[\'action\'];}\\n\\nswitch ($action) {\\n\\tcase \'login\': $Loginza->Login(); break;\\n\\tcase \'logout\': $Loginza->Logout(); break;\\n\\tcase \'getProfile\': return $Loginza->getProfile(); break;\\n\\tcase \'updateProfile\': return $Loginza->updateProfile(); break;\\n\\tcase \'loadTpl\': \\n\\tdefault: return $Loginza->loadTpl(); break;\\n}","locked":0,"properties":"a:15:{s:10:\\"rememberme\\";a:7:{s:4:\\"name\\";s:10:\\"rememberme\\";s:4:\\"desc\\";s:39:\\"If true, user will receive long session\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:1;s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}s:8:\\"loginTpl\\";a:7:{s:4:\\"name\\";s:8:\\"loginTpl\\";s:4:\\"desc\\";s:24:\\"Chunk for anonymous user\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:17:\\"tpl.Loginza.login\\";s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}s:9:\\"logoutTpl\\";a:7:{s:4:\\"name\\";s:9:\\"logoutTpl\\";s:4:\\"desc\\";s:28:\\"Chunk for authenticated user\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:18:\\"tpl.Loginza.logout\\";s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}s:10:\\"profileTpl\\";a:7:{s:4:\\"name\\";s:10:\\"profileTpl\\";s:4:\\"desc\\";s:39:\\"Chunk for display and edit user profile\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:19:\\"tpl.Loginza.profile\\";s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}s:8:\\"saltName\\";a:7:{s:4:\\"name\\";s:8:\\"saltName\\";s:4:\\"desc\\";s:27:\\"Salt for generated user key\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}s:8:\\"saltPass\\";a:7:{s:4:\\"name\\";s:8:\\"saltPass\\";s:4:\\"desc\\";s:32:\\"Salt for generated user password\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}s:6:\\"groups\\";a:7:{s:4:\\"name\\";s:6:\\"groups\\";s:4:\\"desc\\";s:83:\\"Comma separated list of existing user groups for joining by user at the first login\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}s:12:\\"loginContext\\";a:7:{s:4:\\"name\\";s:12:\\"loginContext\\";s:4:\\"desc\\";s:31:\\"Main context for authentication\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}s:11:\\"addContexts\\";a:7:{s:4:\\"name\\";s:11:\\"addContexts\\";s:4:\\"desc\\";s:62:\\"Comma separated list of additional contexts for authentication\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}s:13:\\"updateProfile\\";a:7:{s:4:\\"name\\";s:13:\\"updateProfile\\";s:4:\\"desc\\";s:80:\\"If true, user profile will be updated by data from remote service on every login\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:1;s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}s:13:\\"profileFields\\";a:7:{s:4:\\"name\\";s:13:\\"profileFields\\";s:4:\\"desc\\";s:54:\\"Comma separated list of allowed user fields for update\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:109:\\"username,email,fullname,phone,mobilephone,dob,gender,address,country,city,state,zip,fax,photo,comment,website\\";s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}s:6:\\"action\\";a:7:{s:4:\\"name\\";s:6:\\"action\\";s:4:\\"desc\\";s:21:\\"Action of the snippet\\";s:4:\\"type\\";s:4:\\"list\\";s:7:\\"options\\";a:5:{i:0;a:2:{s:4:\\"text\\";s:5:\\"login\\";s:5:\\"value\\";s:5:\\"login\\";}i:1;a:2:{s:4:\\"text\\";s:6:\\"logout\\";s:5:\\"value\\";s:6:\\"logout\\";}i:2;a:2:{s:4:\\"text\\";s:10:\\"getProfile\\";s:5:\\"value\\";s:10:\\"getProfile\\";}i:3;a:2:{s:4:\\"text\\";s:13:\\"updateProfile\\";s:5:\\"value\\";s:13:\\"updateProfile\\";}i:4;a:2:{s:4:\\"text\\";s:7:\\"loadTpl\\";s:5:\\"value\\";s:7:\\"loadTpl\\";}}s:5:\\"value\\";s:7:\\"loadTpl\\";s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}s:14:\\"requiredFields\\";a:7:{s:4:\\"name\\";s:14:\\"requiredFields\\";s:4:\\"desc\\";s:56:\\"Comma separated list of required user fields when update\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:23:\\"username,email,fullname\\";s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}s:15:\\"loginResourceId\\";a:7:{s:4:\\"name\\";s:15:\\"loginResourceId\\";s:4:\\"desc\\";s:72:\\"Resource id to redirect to on successful login. 0 will redirect to self.\\";s:4:\\"type\\";s:11:\\"numberfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";i:0;s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}s:16:\\"logoutResourceId\\";a:7:{s:4:\\"name\\";s:16:\\"logoutResourceId\\";s:4:\\"desc\\";s:73:\\"Resource id to redirect to on successful logout. 0 will redirect to self.\\";s:4:\\"type\\";s:11:\\"numberfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";i:0;s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"","content":"\\/\\/ini_set(\'display_errors\', 1);\\n\\/\\/ini_set(\'error_reporting\', -1);\\n\\n$Loginza = $modx->getService(\'loginza\',\'Loginza\', $modx->getOption(\'core_path\').\'components\\/loginza\\/model\\/loginza\\/\',$scriptProperties);\\nif (!($Loginza instanceof Loginza)) return;\\n\\nif (empty($_REQUEST[\'action\'])) {$action = $modx->getOption(\'action\', $scriptProperties, \'loadTpl\');}\\nelse {$action = $_REQUEST[\'action\'];}\\n\\nswitch ($action) {\\n\\tcase \'login\': $Loginza->Login(); break;\\n\\tcase \'logout\': $Loginza->Logout(); break;\\n\\tcase \'getProfile\': return $Loginza->getProfile(); break;\\n\\tcase \'updateProfile\': return $Loginza->updateProfile(); break;\\n\\tcase \'loadTpl\': \\n\\tdefault: return $Loginza->loadTpl(); break;\\n}"}',
+        'guid' => '734b81cd529c8a0903149a5fc74c8168',
+        'native_key' => 0,
+        'signature' => '8944a3ac93dc6f83710f1fcab05c27d9',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'category',
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'Snippets' => 
+        array (
+          'preserve_keys' => false,
+          'update_object' => true,
+          'unique_key' => 'name',
+        ),
+        'Chunks' => 
+        array (
+          'preserve_keys' => false,
+          'update_object' => false,
+          'unique_key' => 'name',
+        ),
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'loginza',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"loginza-1.3.1-pl\\/modCategory\\/65bf32c9e835fdedcfd370c57b9d0a8d\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"loginza"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '25174ebacc7f1461f54d4c201cdbc936',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '65bf32c9e835fdedcfd370c57b9d0a8d',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"Loginza"}',
+);

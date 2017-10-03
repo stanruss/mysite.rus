@@ -1,0 +1,208 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '9b8537cea16ca5e0b060987081d0a3b6' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"blogit.blog_row_tpl","description":"Blogit - Created by MPThemes http:\\/\\/mpthemes.com","editor_type":0,"category":0,"cache_type":0,"snippet":"<section class=\\"blog_row_container\\">\\r\\n\\t<h2><a href=\\"[[~[[+id]]]]\\" title=\\"[[+longtitle:strip_tags:empty=`[[+pagetitle:strip_tags]]`]]\\">[[+longtitle:strip_tags:empty=`[[+pagetitle:strip_tags]]`]]<\\/a><\\/h2>\\r\\n\\t[[+blogit.post_main_image:isnot=``:then=`<a href=\\"[[~[[+id]]]]\\" title=\\"[[+longtitle:strip_tags:empty=`[[+pagetitle:strip_tags]]`]]\\"><img src=\\"[[+blogit.post_main_image:phpthumbof=`w=[[++blogit.main_image_overview_width]]&h=[[++blogit.main_image_overview_height]]&zc=[[++blogit.main_image_overview_cz]]`]]\\" alt=\\"[[+blogit.post_main_image_alt]]\\"><\\/a>`]]\\r\\n\\t<p>[[+introtext]]<\\/p>\\r\\n\\t<small>[[%blogit.published_on]]: <time datetime=\\"[[+publishedon:strtotime:date=`%y-%m-%d`]]\\">[[+publishedon:strtotime:date=`%b %d %Y`]]<\\/time><\\/small><br>\\r\\n\\t<small>[[%blogit.created_by]]: [[+createdby:userinfo=`username`]]<\\/small><br>\\r\\n\\t[[++blogit.use_tags:isequalto=`1`:then=`\\r\\n\\t<small>Tags: [[!TaggerGetTags? &resources=`[[+id]]` &rowTpl=`blogit.tag_links_tpl` &separator=`, `]]<\\/small>\\r\\n\\t`]]\\r\\n\\t<p><a href=\\"[[~[[+id]]]]\\">[[%blogit.readmore]]<\\/a><\\/p>\\r\\n<\\/section>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<section class=\\"blog_row_container\\">\\r\\n\\t<h2><a href=\\"[[~[[+id]]]]\\" title=\\"[[+longtitle:strip_tags:empty=`[[+pagetitle:strip_tags]]`]]\\">[[+longtitle:strip_tags:empty=`[[+pagetitle:strip_tags]]`]]<\\/a><\\/h2>\\r\\n\\t[[+blogit.post_main_image:isnot=``:then=`<a href=\\"[[~[[+id]]]]\\" title=\\"[[+longtitle:strip_tags:empty=`[[+pagetitle:strip_tags]]`]]\\"><img src=\\"[[+blogit.post_main_image:phpthumbof=`w=[[++blogit.main_image_overview_width]]&h=[[++blogit.main_image_overview_height]]&zc=[[++blogit.main_image_overview_cz]]`]]\\" alt=\\"[[+blogit.post_main_image_alt]]\\"><\\/a>`]]\\r\\n\\t<p>[[+introtext]]<\\/p>\\r\\n\\t<small>[[%blogit.published_on]]: <time datetime=\\"[[+publishedon:strtotime:date=`%y-%m-%d`]]\\">[[+publishedon:strtotime:date=`%b %d %Y`]]<\\/time><\\/small><br>\\r\\n\\t<small>[[%blogit.created_by]]: [[+createdby:userinfo=`username`]]<\\/small><br>\\r\\n\\t[[++blogit.use_tags:isequalto=`1`:then=`\\r\\n\\t<small>Tags: [[!TaggerGetTags? &resources=`[[+id]]` &rowTpl=`blogit.tag_links_tpl` &separator=`, `]]<\\/small>\\r\\n\\t`]]\\r\\n\\t<p><a href=\\"[[~[[+id]]]]\\">[[%blogit.readmore]]<\\/a><\\/p>\\r\\n<\\/section>"}',
+        'guid' => '90d4ba4085dfa76032bf984f1b5503f2',
+        'native_key' => 1,
+        'signature' => 'fe6009f3b83ce869b5f1f896a967a64f',
+      ),
+      'f98b7bdfdf7cab6e4f4ba20cd3a606f8' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"name":"blogit.tag_links_tpl","description":"Blogit - Created by MPThemes http:\\/\\/mpthemes.com","editor_type":0,"category":0,"cache_type":0,"snippet":"<a href=\\"[[+uri]]\\">[[+tag]]<\\/a>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<a href=\\"[[+uri]]\\">[[+tag]]<\\/a>"}',
+        'guid' => '2ccb928a780ec347c422456516c39e72',
+        'native_key' => 2,
+        'signature' => '4a3e077fdef558a55ee71e4c5de18106',
+      ),
+      '2c154c97a8869074028fb58408b1cf45' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":3,"source":0,"property_preprocess":0,"name":"blogit.container","description":"Blogit - Created by MPThemes http:\\/\\/mpthemes.com","editor_type":0,"category":0,"cache_type":0,"snippet":"<!-- BlogIt - This chunk grabs all children of the resource. -->\\n[[$blogit.get_posts]]\\n<!-- BlogIt - This chunk grabs all uses Tagger tags used in posts -->\\n[[$blogit.taglist]]","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<!-- BlogIt - This chunk grabs all children of the resource. -->\\n[[$blogit.get_posts]]\\n<!-- BlogIt - This chunk grabs all uses Tagger tags used in posts -->\\n[[$blogit.taglist]]"}',
+        'guid' => 'bdcaae448d3c59d64f073d7df0fdf648',
+        'native_key' => 3,
+        'signature' => 'ec7897adc6c2350e635c5986fb3b3429',
+      ),
+      'd62c2342155bba3be01049c27285e412' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":4,"source":0,"property_preprocess":0,"name":"blogit.get_posts","description":"Blogit - Created by MPThemes http:\\/\\/mpthemes.com","editor_type":0,"category":0,"cache_type":0,"snippet":"[[blogit.lexicon_load]]\\n[[!getResources?\\n\\t&parents=`[[*id]]`\\n\\t&tpl=`blogit.blog_row_tpl`\\n\\t&includeTVs=`1`\\n\\t&processTVs=`1`\\n\\t&tvPrefix=``\\n\\t&where=`[[!TaggerGetResourcesWhere]]`\\n]]","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"[[blogit.lexicon_load]]\\n[[!getResources?\\n\\t&parents=`[[*id]]`\\n\\t&tpl=`blogit.blog_row_tpl`\\n\\t&includeTVs=`1`\\n\\t&processTVs=`1`\\n\\t&tvPrefix=``\\n\\t&where=`[[!TaggerGetResourcesWhere]]`\\n]]"}',
+        'guid' => '143ee70124795ebaed3fd580494b2aa7',
+        'native_key' => 4,
+        'signature' => 'c50196ca7d527cabf63e0709f2df19da',
+      ),
+      '7c05aad50087f92cca82d099514192aa' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":5,"source":0,"property_preprocess":0,"name":"blogit.taglist","description":"Blogit - Created by MPThemes http:\\/\\/mpthemes.com","editor_type":0,"category":0,"cache_type":0,"snippet":"[[++blogit.use_tags:isequalto=`1`:then=`\\r\\n<h4>[[%blogit.tags_header]]<\\/h4>\\r\\n[[TaggerGetTags? &rowTpl=`blogit.tag_links_tpl` &separator=`, `]]\\r\\n`]]","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"[[++blogit.use_tags:isequalto=`1`:then=`\\r\\n<h4>[[%blogit.tags_header]]<\\/h4>\\r\\n[[TaggerGetTags? &rowTpl=`blogit.tag_links_tpl` &separator=`, `]]\\r\\n`]]"}',
+        'guid' => '19c637a9f323ef3332513b8a0c7e97bd',
+        'native_key' => 5,
+        'signature' => 'cc75f944e654182bb230e7d937e9b2b7',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      '83f12e59f79c7efd1b57cb854429506f' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"blogit.lexicon_load","description":"Blogit - Created by MPThemes http:\\/\\/mpthemes.com","editor_type":0,"category":0,"cache_type":0,"snippet":"$modx->lexicon->load(\'blogit:default\');\\nreturn \'\';","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"","content":"$modx->lexicon->load(\'blogit:default\');\\nreturn \'\';"}',
+        'guid' => 'cd8412330c81176d984e24571c1f138b',
+        'native_key' => 1,
+        'signature' => 'fd1b52ab0268f01eb54f2a9435663b05',
+      ),
+    ),
+    'Templates' => 
+    array (
+      '12d1fe760aa9e6dae092a591727a38e4' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'templatename',
+        'class' => 'modTemplate',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"templatename":"Blogit container","description":"Blogit - Created by MPThemes http:\\/\\/mpthemes.com","editor_type":0,"category":0,"icon":"","template_type":0,"content":"<!DOCTYPE html>\\r\\n<html lang=\\"en\\">\\r\\n<head>\\r\\n\\t<base href=\\"[[++site_url]]\\" \\/>\\r\\n        <meta charset=\\"[[++modx_charset:lcase]]\\" \\/>\\r\\n        <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge,chrome=1\\">\\r\\n        <title>[[*longtitle:strip_tags:empty=`[[*pagetitle:strip_tags]]`]] | [[++site_name:strip_tags]]<\\/title>\\r\\n        <meta name=\\"description\\" content=\\"[[*description:notempty=`[[*description]]`:default=`[[+content:ellipsis=`155`]]`]]\\">\\r\\n        <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\">\\r\\n<\\/head>\\r\\n<body>\\r\\n\\t[[*content]]\\r\\n\\t<!-- BlogIt - This chunk grabs all children of the resource. -->\\r\\n\\t[[$blogit.get_posts]]\\r\\n\\t<!-- BlogIt - This chunk grabs all uses Tagger tags used in posts -->\\r\\n\\t[[$blogit.taglist]]\\r\\n<\\/body>\\r\\n<\\/html>","locked":0,"properties":null,"static":0,"static_file":""}',
+        'guid' => '4c21d98db5f35deb4c6420d903c6823e',
+        'native_key' => 1,
+        'signature' => '06f07d9e11fe79d3cf8c6b43caae7a89',
+      ),
+      '4d454bdf078c876d2898d2a7488716b6' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'templatename',
+        'class' => 'modTemplate',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"templatename":"Blogit post","description":"Blogit - Created by MPThemes http:\\/\\/mpthemes.com","editor_type":0,"category":0,"icon":"","template_type":0,"content":"<!DOCTYPE html>\\r\\n<html lang=\\"en\\">\\r\\n<head>\\r\\n\\t<base href=\\"[[++site_url]]\\" \\/>\\r\\n        <meta charset=\\"[[++modx_charset:lcase]]\\" \\/>\\r\\n        <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge,chrome=1\\">\\r\\n        <title>[[*longtitle:strip_tags:empty=`[[*pagetitle:strip_tags]]`]] | [[++site_name:strip_tags]]<\\/title>\\r\\n        <meta name=\\"description\\" content=\\"[[*description:notempty=`[[*description]]`:default=`[[+content:ellipsis=`155`]]`]]\\">\\r\\n        <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\">\\r\\n<\\/head>\\r\\n<body>\\r\\n\\t[[blogit.lexicon_load]]\\r\\n\\t<p><a href=\\"[[~[[*parent]]]]\\">[[%blogit.back_to_overview]]<\\/a><\\/p>\\r\\n\\t<article>\\r\\n\\t\\t<header>\\r\\n\\t\\t\\t<h1>[[*longtitle:strip_tags:empty=`[[*pagetitle:strip_tags]]`]]<\\/h1>\\r\\n\\t\\t<\\/header>\\r\\n\\t\\t[[*blogit.post_main_image:isnot=``:then=`<img src=\\"[[*blogit.post_main_image:phpthumbof=`w=[[++blogit.main_image_width]]`]]\\" alt=\\"[[*blogit.post_main_image_alt]]\\">`]]\\r\\n\\t\\t[[*content]]\\r\\n\\t\\t<footer>\\r\\n\\t\\t\\t<small>[[%blogit.published_on]]: <time datetime=\\"[[*publishedon:strtotime:date=`%y-%m-%d`]]\\">[[*publishedon:strtotime:date=`%b %d %Y`]]<\\/time><\\/small><br>\\r\\n\\t\\t\\t<small>[[%blogit.created_by]]: [[*createdby:userinfo=`username`]]<\\/small><br>\\r\\n\\t\\t\\t[[++blogit.use_tags:isequalto=`1`:then=`\\r\\n\\t\\t\\t<small>Tags: [[!TaggerGetTags? &resources=`[[*id]]` &rowTpl=`blogit.tag_links_tpl` &separator=`, ` &target=`[[++blogit.blog_container_id]]`]]<\\/small>\\r\\n\\t\\t\\t`]]\\r\\n\\t\\t<\\/footer>\\r\\n\\t<\\/article>\\r\\n<\\/body>\\r\\n<\\/html>","locked":0,"properties":null,"static":0,"static_file":""}',
+        'guid' => 'd76fb4e238d4fa95fdd8a67f341c848e',
+        'native_key' => 2,
+        'signature' => '4ec2782874e2a37392514bbba323f036',
+      ),
+    ),
+    'TemplateVars' => 
+    array (
+      '45326e028e19f8dd581eb2e2a6f3ecde' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"type":"image","name":"blogit.post_main_image","caption":"Main image","description":"Select the main image to show with this post, leave blank for no image, a re-sized verzion will be shown on the blog post overview.","editor_type":0,"category":0,"locked":0,"elements":"","rank":1,"display":"default","default_text":"","properties":"a:0:{}","input_properties":"a:0:{}","output_properties":"a:0:{}","static":0,"static_file":"","content":""}',
+        'guid' => 'e915b9905cd0d7b82457133e9d5113c6',
+        'native_key' => 1,
+        'signature' => 'b4d9594f7cf0da56156233eb1e8ddedb',
+      ),
+      '4e8923159d2dfdb535ffa0b135975f38' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"type":"text","name":"blogit.post_main_image_alt","caption":"Alt text for the main image","description":"Fill in a description of the image (used mostly for Google).","editor_type":0,"category":0,"locked":0,"elements":"","rank":2,"display":"default","default_text":"","properties":"a:0:{}","input_properties":"a:3:{s:10:\\"allowBlank\\";s:4:\\"true\\";s:9:\\"maxLength\\";s:0:\\"\\";s:9:\\"minLength\\";s:0:\\"\\";}","output_properties":"a:0:{}","static":0,"static_file":"","content":""}',
+        'guid' => '70a9444df22e6128c4917122f6ccbc9c',
+        'native_key' => 2,
+        'signature' => 'ff0f7151a7c61d950a6ef67f9f7b40e4',
+      ),
+    ),
+  ),
+  'abort_install_on_vehicle_fail' => true,
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'blogit',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"blogit-1.2.0-pl\\/modCategory\\/59bd1e8ca66290695d1d77761ec5d364\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"blogit"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"blogit-1.2.0-pl\\/modCategory\\/59bd1e8ca66290695d1d77761ec5d364\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"blogit"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"blogit-1.2.0-pl\\/modCategory\\/59bd1e8ca66290695d1d77761ec5d364.tv.resolver.resolver","type":"php","name":"tv.resolver"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"blogit-1.2.0-pl\\/modCategory\\/59bd1e8ca66290695d1d77761ec5d364.addcontent.resolver.resolver","type":"php","name":"addcontent.resolver"}',
+    ),
+    4 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"blogit-1.2.0-pl\\/modCategory\\/59bd1e8ca66290695d1d77761ec5d364.resource.resolver.resolver","type":"php","name":"resource.resolver"}',
+    ),
+    5 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"blogit-1.2.0-pl\\/modCategory\\/59bd1e8ca66290695d1d77761ec5d364.blogit.resolver.resolver","type":"php","name":"blogit.resolver"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"blogit-1.2.0-pl\\/modCategory\\/59bd1e8ca66290695d1d77761ec5d364.blogit.validator.validator","type":"php","name":"blogit.validator"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'eb215afbad23492d8d1024dfcc7c1b37',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '59bd1e8ca66290695d1d77761ec5d364',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"blogit","rank":0}',
+);

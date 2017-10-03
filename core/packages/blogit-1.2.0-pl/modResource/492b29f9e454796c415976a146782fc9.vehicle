@@ -1,0 +1,26 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 'pagetitle',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'ContentType' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'blogit',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5e1ee6742c48ac6365995535ed0eeb7b',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => '492b29f9e454796c415976a146782fc9',
+  'native_key' => 1,
+  'object' => '{"id":1,"type":"document","contentType":"text\\/html","pagetitle":"Blog","longtitle":"","description":"Demo blog container page for Blogit.","alias":"blog","link_attributes":"","published":1,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":1,"introtext":"","content":"<h1>Blog overview<\\/h1>","richtext":1,"template":0,"menuindex":2,"searchable":1,"cacheable":1,"createdby":1,"createdon":0,"editedby":1,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":0,"class_key":"CollectionContainer","context_key":"web","content_type":1,"uri":null,"uri_override":0,"hide_children_in_tree":0,"show_in_tree":1,"properties":null}',
+);

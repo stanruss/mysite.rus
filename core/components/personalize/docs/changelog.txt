@@ -1,0 +1,58 @@
+Changelog for Personalize.
+
+Personalize 3.7.1-pl
+-----------------
+Fix bug with First Name option
+
+Personalize 3.7.0-pl
+-----------------
+Added &context property (thanks to Josef Vavrina)
+
+Personalize 3.6.0
+-----------------
+(updates by Vasia123)
+Added &allowedGroups option
+
+Personalize 3.5.0
+-----------------
+(updates by Jared Loman)
+Added &firstName placeholder option
+
+Personalize 3.4.0
+-----------------
+(updates by Vasia123)
+inline HTML with @CODE: in yesChunk and noChunk
+add property &ifIds - shows yesChunk only to users in list
+noChunk now is optional
+
+Personalize 3.3.0
+-----------------
+Fixed bug with users having no profile
+Fall back to username if no profile or no fullname
+Allow using no chunks and just setting placeholder
+Code cleanup and reformatting
+Created tutorial
+
+Personalize 3.2.1
+-----------------
+Fixed bug in transport package
+
+Personalize 3.2
+---------------
+Revolution release
+
+Personalize 1.0.1
+ - Updated PhpDoc comments
+ - Added Build
+ - Reorganized for Git
+ - Revolution Transport Package created
+ - MODx Revolution version
+
+Ancient History
+ - Aug 06, 07 -- replaced 2.0 code with modified version found here
+ - Aug 03, 06 -- added placeholder for username
+ - Jul 19, 06 -- hacked by kudo to output chunks
+ - Dec 01, 05 -- initial release - Ryan Thrash
+
+
+

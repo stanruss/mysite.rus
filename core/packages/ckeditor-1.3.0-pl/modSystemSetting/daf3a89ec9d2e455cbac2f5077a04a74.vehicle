@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'ckeditor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '4a9df363d7036b3677134cfc42fe3450',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'daf3a89ec9d2e455cbac2f5077a04a74',
+  'native_key' => 'ckeditor.toolbar_groups',
+  'object' => '{"key":"ckeditor.toolbar_groups","value":"[{\\"name\\":\\"document\\",\\"groups\\":[\\"mode\\",\\"document\\",\\"doctools\\"]},{\\"name\\":\\"clipboard\\",\\"groups\\":[\\"clipboard\\",\\"undo\\"]},{\\"name\\":\\"editing\\",\\"groups\\":[\\"find\\",\\"selection\\",\\"spellchecker\\"]},{\\"name\\":\\"links\\"},{\\"name\\":\\"insert\\"},{\\"name\\":\\"forms\\"},\\"\\/\\",{\\"name\\":\\"basicstyles\\",\\"groups\\":[\\"basicstyles\\",\\"cleanup\\"]},{\\"name\\":\\"paragraph\\",\\"groups\\":[\\"list\\",\\"indent\\",\\"blocks\\",\\"align\\",\\"bidi\\"]},{\\"name\\":\\"styles\\"},{\\"name\\":\\"colors\\"},{\\"name\\":\\"tools\\"},{\\"name\\":\\"others\\"},{\\"name\\":\\"about\\"}]","xtype":"textarea","namespace":"ckeditor","area":"general","editedon":null}',
+);

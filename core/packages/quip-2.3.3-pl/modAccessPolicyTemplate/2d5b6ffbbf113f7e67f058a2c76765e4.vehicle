@@ -1,0 +1,203 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Permissions' => 
+    array (
+      '693fbc0312efa8d6f4a58360c339df6a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"quip.comment_approve","description":"perm.comment_approve","value":1}',
+        'guid' => '08637c79d03892491a095b3aae409115',
+        'native_key' => NULL,
+        'signature' => 'f221eba6f012c2f16e5f56a432c08559',
+      ),
+      '8984aadefdc94b25ba095e08584626b7' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"quip.comment_list","description":"perm.comment_list","value":1}',
+        'guid' => 'e833c1ffc93092016572dabc0f645125',
+        'native_key' => NULL,
+        'signature' => '3f7ff2c73b7b428c8cc24360a7b3f7e3',
+      ),
+      '969feb63d5b4b9437b5bd665b2b586a3' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"quip.comment_list_unapproved","description":"perm.comment_list_unapproved","value":1}',
+        'guid' => '2e05bb6d57ffba0ea80cdd60b12d825e',
+        'native_key' => NULL,
+        'signature' => '708dc8774ad03d5ccea6a6a63998603b',
+      ),
+      '22dd1bb6cd1a0514ea9b7dd0bb6c89ab' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"quip.comment_remove","description":"perm.comment_remove","value":1}',
+        'guid' => 'd731b697eef6f4165be1e7b4c7d954c5',
+        'native_key' => NULL,
+        'signature' => '00f410eee867fea878ac653bb5f00223',
+      ),
+      'ffe1f264d5c8cf9209e4bc532b703ffe' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"quip.comment_update","description":"perm.comment_update","value":1}',
+        'guid' => '5c7aa0b7e88f673dcfc11d6d2c64c84b',
+        'native_key' => NULL,
+        'signature' => '2c3abbf9791db136a0628ba158293d66',
+      ),
+      'eb23a11be2b2cc7a9dda0157f24f6f32' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"quip.thread_list","description":"perm.thread_list","value":1}',
+        'guid' => '12a842fd46af56004ae14d149b530976',
+        'native_key' => NULL,
+        'signature' => '790a5fea8c319725a4426c6bc910076f',
+      ),
+      'a31b310b7cdbb985eeab8968de3c83de' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"quip.thread_manage","description":"perm.thread_manage","value":1}',
+        'guid' => 'eefa709380e0ced59ba267edb3d576d8',
+        'native_key' => NULL,
+        'signature' => '706399e702a892ebb1f39c8257d66ada',
+      ),
+      'f139fa3da6b0c88ffc15fa67593f86f9' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"quip.thread_remove","description":"perm.thread_remove","value":1}',
+        'guid' => '42ef8ad3a846fdaf1b8654af9bf3508b',
+        'native_key' => NULL,
+        'signature' => 'd141ce5fe93410981025e1c5ad250ef2',
+      ),
+      '79186702ec3344974d2462e009151edd' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"quip.thread_truncate","description":"perm.thread_truncate","value":1}',
+        'guid' => '4f5ae12a5346f45a0da803784740d413',
+        'native_key' => NULL,
+        'signature' => '1b5cf42a40e67470e4545073b12a715c',
+      ),
+      '2b95d7175e0a878add305623271639ed' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"quip.thread_update","description":"perm.thread_update","value":1}',
+        'guid' => '97c460d5bf5464de373a48eec41ca3d2',
+        'native_key' => NULL,
+        'signature' => '486b11201e0221d0269df5f4a6c4075d',
+      ),
+      'c9a85517f83c411cb91141b6815fe305' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"quip.thread_view","description":"perm.thread_view","value":1}',
+        'guid' => '9bb5378e0477968fd8cfcc5aa6efe6ea',
+        'native_key' => NULL,
+        'signature' => '4616add0e8d25f2a5934e2657b7c1441',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Permissions' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'template',
+        1 => 'name',
+      ),
+    ),
+  ),
+  'namespace' => 'quip',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '290b7ab53637a1e7b5536477ee2b45e9',
+  'package' => 'modx',
+  'class' => 'modAccessPolicyTemplate',
+  'signature' => '2d5b6ffbbf113f7e67f058a2c76765e4',
+  'native_key' => NULL,
+  'object' => '{"id":null,"template_group":1,"name":"QuipModeratorPolicyTemplate","description":"A policy for moderating Quip comments.","lexicon":"quip:permissions"}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'quip',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b814bbfc8a1c7ff7d8b44cfe2439b210',
+  'package' => 'modx',
+  'class' => 'modNamespace',
+  'signature' => '90a81c3ec1c8fd678f876df152a3dbd6',
+  'native_key' => 'recaptcha',
+  'object' => '{"name":"recaptcha","path":"{core_path}components\\/recaptcha\\/","assets_path":""}',
+);

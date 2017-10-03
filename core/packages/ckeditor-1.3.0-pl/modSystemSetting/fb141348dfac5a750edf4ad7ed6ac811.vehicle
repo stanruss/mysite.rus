@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'ckeditor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'fea50294c03360b2d29760673648719f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'fb141348dfac5a750edf4ad7ed6ac811',
+  'native_key' => 'ckeditor.skin',
+  'object' => '{"key":"ckeditor.skin","value":"moono","xtype":"textfield","namespace":"ckeditor","area":"general","editedon":null}',
+);

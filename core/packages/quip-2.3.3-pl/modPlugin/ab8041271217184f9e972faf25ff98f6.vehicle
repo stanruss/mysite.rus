@@ -1,0 +1,54 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'PluginEvents' => 
+    array (
+      '31b082ba0dcd2f8f018d954b8c2c01fa' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnEmptyTrash","priority":0,"propertyset":0}',
+        'guid' => '61626bb424bda3bd21b4da9b2c7b3c0f',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnEmptyTrash',
+        ),
+        'signature' => '0cfc5c277085fb75372bdefedc0d1324',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'quip',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7d7197fb5dbc2c4bde10e664d9624f03',
+  'package' => 'modx',
+  'class' => 'modPlugin',
+  'signature' => 'ab8041271217184f9e972faf25ff98f6',
+  'native_key' => 1,
+  'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"QuipResourceCleaner","description":"Cleans up threads when a Resource is removed.","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\n * Quip\\n *\\n * Copyright 2010-11 by Shaun McCormick <shaun@modx.com>\\n *\\n * This file is part of Quip, a simple commenting component for MODx Revolution.\\n *\\n * Quip is free software; you can redistribute it and\\/or modify it under the\\n * terms of the GNU General Public License as published by the Free Software\\n * Foundation; either version 2 of the License, or (at your option) any later\\n * version.\\n *\\n * Quip is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * Quip; if not, write to the Free Software Foundation, Inc., 59 Temple Place,\\n * Suite 330, Boston, MA 02111-1307 USA\\n *\\n * @package quip\\n *\\/\\n\\/**\\n * Handles removal of threads if a Resource is deleted.\\n * \\n * @package quip\\n *\\/\\n$quip = $modx->getService(\'quip\',\'Quip\',$modx->getOption(\'quip.core_path\',null,$modx->getOption(\'core_path\').\'components\\/quip\\/\').\'model\\/quip\\/\',$scriptProperties);\\nif (!($quip instanceof Quip)) return;\\n\\nswitch ($modx->event->name) {\\n    case \'OnEmptyTrash\':\\n        foreach ($scriptProperties[\'ids\'] as $id) {\\n            if (empty($id)) continue;\\n\\n            $threads = $modx->getCollection(\'quipThread\',array(\'resource\' => $id));\\n            foreach ($threads as $thread) {\\n                $modx->log(modX::LOG_LEVEL_INFO,\'[Quip] Removing thread: \'.$thread->get(\'name\'));\\n                $thread->remove();\\n            }\\n        }\\n        break;\\n}\\nreturn;","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * Quip\\n *\\n * Copyright 2010-11 by Shaun McCormick <shaun@modx.com>\\n *\\n * This file is part of Quip, a simple commenting component for MODx Revolution.\\n *\\n * Quip is free software; you can redistribute it and\\/or modify it under the\\n * terms of the GNU General Public License as published by the Free Software\\n * Foundation; either version 2 of the License, or (at your option) any later\\n * version.\\n *\\n * Quip is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * Quip; if not, write to the Free Software Foundation, Inc., 59 Temple Place,\\n * Suite 330, Boston, MA 02111-1307 USA\\n *\\n * @package quip\\n *\\/\\n\\/**\\n * Handles removal of threads if a Resource is deleted.\\n * \\n * @package quip\\n *\\/\\n$quip = $modx->getService(\'quip\',\'Quip\',$modx->getOption(\'quip.core_path\',null,$modx->getOption(\'core_path\').\'components\\/quip\\/\').\'model\\/quip\\/\',$scriptProperties);\\nif (!($quip instanceof Quip)) return;\\n\\nswitch ($modx->event->name) {\\n    case \'OnEmptyTrash\':\\n        foreach ($scriptProperties[\'ids\'] as $id) {\\n            if (empty($id)) continue;\\n\\n            $threads = $modx->getCollection(\'quipThread\',array(\'resource\' => $id));\\n            foreach ($threads as $thread) {\\n                $modx->log(modX::LOG_LEVEL_INFO,\'[Quip] Removing thread: \'.$thread->get(\'name\'));\\n                $thread->remove();\\n            }\\n        }\\n        break;\\n}\\nreturn;"}',
+);

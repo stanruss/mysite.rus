@@ -1,0 +1,390 @@
+@mixin border($size, $color, $position)
+	@if $position == 'all'
+		border: $size solid $color
+	@else if $position == 'top'
+		border-top: $size solid $color
+	@else if $position == 'bottom'
+		border-bottom: $size solid $color
+	@else if $position == 'right'
+		border-right: $size solid $color
+	@else if $position == 'left'
+		border-left: $size solid $color
+	@else if $position == 'right-left'
+		border-left: $size solid $color
+		border-right: $size solid $color
+	@else if $position == 'top-bottom'
+		border-top: $size solid $color
+		border-bottom: $size solid $color
+@mixin margin($size, $position)
+	@if $position == 'all'
+		margin: $size
+	@else if $position == 'top'
+		margin-top: $size
+	@else if $position == 'bottom'
+		margin-bottom: $size
+	@else if $position == 'right'
+		margin-right: $size
+	@else if $position == 'left'
+		margin-left: $size
+	@else if $position == 'right-left'
+		margin-left: $size
+		margin-right: $size
+	@else if $position == 'top-bottom'
+		margin-top: $size
+		margin-bottom: $size
+@mixin padding($size, $position)
+	@if $position == 'all'
+		padding: $size
+	@else if $position == 'top'
+		padding-top: $size
+	@else if $position == 'bottom'
+		padding-bottom: $size
+	@else if $position == 'right'
+		padding-right: $size
+	@else if $position == 'left'
+		padding-left: $size
+	@else if $position == 'right-left'
+		padding-left: $size
+		padding-right: $size
+	@else if $position == 'top-bottom'
+		padding-top: $size
+		padding-bottom: $size
+@mixin transform-rotate ($rot)
+	transform: rotate($rot) //браузеры без префексов
+	-webkit-transform: rotate($rot) //Chrome, Safari
+	-moz-transform: rotate($rot) //Firefox
+	-o-transform: rotate($rot) //Opera
+	-ms-transform: rotate($rot) //IE
+@mixin transform-scale ($scl)
+	transform: scale($scl) //браузеры без префексов
+	-webkit-transform: scale($scl) //Chrome, Safari
+	-moz-transform: scale($scl) //Firefox
+	-o-transform: scale($scl) //Opera
+	-ms-transform: scale($scl) //IE	
+
+@mixin border-radius($br, $position)
+	@if $position == 'all'
+		border-radius: $br
+		-webkit-border-radius: $br
+		-moz-border-radius: $br
+	@else if $position == 'left-top'
+		border-top-left-radius: $br
+		-webkit-border-top-left-radius: $br
+		-moz-border-top-left-radius: $br
+	@else if $position == 'left-bottom'
+		border-bottom-left-radius: $br
+		-webkit-border-bottom-left-radius: $br
+		-moz-border-bottom-left-radius: $br
+	@else if $position == 'right-top'
+		border-top-right-radius: $br
+		-webkit-border-top-right-radius: $br
+		-moz-border-top-right-radius: $br
+	@else if $position == 'right-bottom'
+		border-bottom-right-radius: $br
+		-webkit-border-bottom-right-radius: $br
+		-moz-border-bottom-right-radius: $br
+	@else if $position == 'right-left-top'
+		border-top-left-radius: $br
+		-webkit-border-top-left-radius: $br
+		-moz-border-top-left-radius: $br
+		border-top-right-radius: $br
+		-webkit-border-top-right-radius: $br
+		-moz-border-top-right-radius: $br
+	@else if $position == 'right-left-bottom'
+		border-bottom-left-radius: $br
+		-webkit-border-bottom-left-radius: $br
+		-moz-border-bottom-left-radius: $br
+		border-bottom-right-radius: $br
+		-webkit-border-bottom-right-radius: $br
+		-moz-border-bottom-right-radius: $br
+
+// трансформация, плавный переход
+// пример: @include transit(color,.2s,ease-in-out);
+=transition($what: all, $when: 0.25s, $how: ease)
+	-webkit-transition: $what $when $how
+	-moz-transition: $what $when $how
+	-ms-transition: $what $when $how
+	-o-transition: $what $when $how
+	transition: $what $when $how
+@mixin pseudo($display: block, $pos: absolute, $content: '')
+	content: $content
+	display: $display
+	position: $pos
+@mixin push-auto 
+	margin: 
+	 left: auto
+	 right: auto
+@mixin responsive-ratio($x,$y, $pseudo: false) 
+	$padding: unquote( ( $y / $x ) * 100 + '%' )
+	@if $pseudo 
+		&:before 
+		@include pseudo($pos: relative)
+		width: 100%
+		padding-top: $padding
+	@else
+		padding-top: $padding
+
+@mixin input-placeholder($content)
+	&.placeholder $content
+	&:-moz-placeholder $content
+	&::-moz-placeholder $content
+	&:-ms-input-placeholder $content
+	&::-webkit-input-placeholder $content
+@mixin hardware($backface: true, $perspective: 1000)
+	@if $backface
+	backface-visibility: hidden
+	perspective: $perspective
+@mixin pad ($pads...)
+	padding: $pads
+// горизонтальное выравнивание для inline блока
+// пример: @include justify;
+=justify
+	text-align: justify
+	line-height: 0
+	font-size: 0
+	text-justify: newspaper
+	zoom: 1
+	text-align-last: justify
+
+	&:after
+		content: ""
+		display: inline-block
+		width: 100%
+		height: 0px
+		visibility: hidden
+		overflow: hidden
+// вертикальное выравнивание для inline блока
+// пример: @include vertical;
+=vertical
+	text-align: center
+	font-size: 0
+
+	&:before
+		content: ""
+		display: inline-block
+		vertical-align: middle
+		width: 0
+		height: 100%
+
+// тень блока
+// пример: @include bsh(1px,1px,3px,0,$gray,inset);
+=bsh($top, $left, $blur, $size, $color, $inset: false)
+	@if $inset
+		-webkit-box-shadow: inset $top $left $blur $size $color
+		-moz-box-shadow: inset $top $left $blur $size $color
+		box-shadow: inset $top $left $blur $size $color
+	@else
+		-webkit-box-shadow: $top $left $blur $size $color
+		-moz-box-shadow: $top $left $blur $size $color
+		box-shadow: $top $left $blur $size $color
+
+// тень текста
+// пример: @include ts(1px,1px,3px,$red);
+=ts($x, $y, $blur, $color)
+	text-shadow: $x $y $blur $color
+
+// тень текста (множественный эффект)
+// пример: @include text-shadow(1px 1px 1px $red, 2px 2px 2px $green);
+=text-shadow($shadows...)
+	text-shadow: $shadows
+// кнопка color
+// пример @include btn;
+=btn
+	display: inline-block
+	border: 1px solid black
+	color: black
+	cursor: pointer
+	outline: none
+	width: 100%
+	text-align: center
+	text-decoration: none
+	padding: 6px 10px
+
+	+br(5px)
+
+	+ts(0, 0, 0, black)
+
+	+grad-l(gray, aqua)
+
+	&:hover
+		+grad-l(aqua, gray)
+// скругление универсальное
+// пример: @include br(3px);
+=br($rad)
+	-webkit-border-radius: $rad
+	-moz-border-radius: $rad
+	-ms-border-radius: $rad
+	border-radius: $rad
+=button
+	color: $white $main-color
+	outline: none
+	border: 1px darken($main-color,25%) solid
+	padding: 5px 55px
+	background-image: none
+	@include border-radius(3px,all)
+	&:hover
+		background-color: darken($main-color, 15%)
+		color: $accent
+		transition: all .5s ease
+		border: 1px darken($main-color,45%) solid
+	&:focus
+		border: 1px darken($main-color,25%) solid
+		color: $accent
+		background-color: $main-color
+// Скругление на каждый угол
+// пример: @include br-c(10px,0,10px,0);
+=br-c($p1, $p2, $p3, $p4)
+	-webkit-border-radius: $p1 $p2 $p3 $p4
+	-moz-border-radius: $p1 $p2 $p3 $p4
+	-ms-border-radius: $p1 $p2 $p3 $p4
+	border-radius: $p1 $p2 $p3 $p4
+
+// Окружность с центрованным элементом
+// пример: @include round(60px,4px);
+=round($w: 80px, $bd: 3px)
+	display: table-cell
+	vertical-align: middle
+	text-align: center
+
+	+br($w / 2)
+
+	height: $w
+	width: $w
+	border-width: $bd
+	border-style: solid
+	border-color: #464a4c
+
+// градиент линейный 
+// пример: @include grad-l($red,$black);
+=grad-l($direction, $color-stops)
+	background: nth(nth($color-stops, 1), 1)
+	background: -webkit-linear-gradient(legacy-direction($direction), $color-stops)
+	background: linear-gradient($direction, $color-stops)
+
+// Бэкграунд на всю ширину экрана.
+// пример: @include cover-background("../img/main.jpg", top, center, scroll);
+=cover-background($img-uri, $background-top: "center", $background-left: "center", $background-attachment: "fixed")
+	background: url($img-uri) no-repeat unquote($background-top) unquote($background-left) unquote($background-attachment)
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+
+// Горизонтальная линия
+// пример: @include sep-h(80%,2px,$blue);
+=sep-h($w, $h, $color)
+	&:after
+		content: ""
+		display: block
+		height: $h
+		width: $w
+		margin: 0 auto
+		background-color: $color
+
+// Сброс параметров списка
+// пример: @include rul;
+=rul
+	margin: 0
+	padding: 0
+	list-style: none
+
+// Поведение при наведении на ссылку
+// пример: @include hov-a(none,$red);
+=hov-a($under: none, $color: #002aff)
+	&:hover, &:focus
+		text-decoration: $under
+		color: $color
+
+// эффект при наведении
+// пример: @include hov1;
+=hov1
+	&:hover
+		opacity: 0.8
+
+=hov2
+	transition: all .2s ease-out
+
+	&:hover
+		opacity: 0.8
+		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5)
+		transition: all .2s ease-out
+
+// input style custom
+// пример: @include input($green,$black,$black,.5s);
+=input($bsh: transparentize(blue, 0.3), $bdc: gray, $pl: gray, $timetransit: 0.15s)
+	display: inline-block
+	height: 34px
+	padding: 6px 12px
+	font-size: 14px
+	line-height: 1.42857143
+	color: #555
+	background-color: #fff
+	background-image: none
+	border: 1px solid $bdc
+	border-radius: 4px
+	-webkit-box-shadow: inset 0 0 1px $bdc
+	box-shadow: inset 0 0 1px $bdc
+	-webkit-transition: border-color ease-in-out $timetransit, -webkit-box-shadow ease-in-out $timetransit
+	-o-transition: border-color ease-in-out $timetransit, box-shadow ease-in-out $timetransit
+	transition: border-color ease-in-out $timetransit, box-shadow ease-in-out $timetransit
+
+	&:focus
+		border-color: $bsh
+		outline: 0
+		-webkit-box-shadow: inset 0 0 1px $bdc, 0 0 8px $bsh
+		box-shadow: inset 0 0 1px $bdc, 0 0 8px $bsh
+
+	&::-moz-placeholder
+		color: $pl
+		opacity: 1
+
+	&:-ms-input-placeholder
+		color: $pl
+
+	&::-webkit-input-placeholder
+		color: $pl
+
+	&::-ms-expand
+		background-color: transparent
+		border: 0
+=reset
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+    
+
+  // HTML5 display-role reset for older browsers
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+    display: block
+
+  body
+    line-height: 1
+
+  ol, ul
+    list-style: none
+
+  blockquote, q
+    quotes: none
+
+  blockquote
+    &:before, &:after
+      content: ""
+      content: none
+
+  q
+    &:before, &:after
+      content: ""
+      content: none
+
+  table
+    border-collapse: collapse
+    border-spacing: 0
+=layout
+  height: 100%
+  opacity: 0.9
+  position: fixed
+  width: 100%
+  z-index: 100000
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  background: #000
