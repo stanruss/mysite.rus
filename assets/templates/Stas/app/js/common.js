@@ -1,9 +1,16 @@
-$( document ).ready(function (){
-	$(".button-collapse").sideNav();
-	$(".carousel.carousel-slider").carousel({
-		fullWidth: true,
-		indicators:true,
-		duration: 500,
-		noWrap:true
-	});
+$( document ).ready(function(){
+	 $(".button-collapse").sideNav();
+	 $('.carousel').carousel({
+	 	fullWidth:true,
+	 	indicators:true,
+	 	noWrap:true
+	 });
+	  $('.parallax').parallax();
+	  $('.modal').modal({
+	  	dismissible:false,
+	  	opacity:.9,
+	  	inDuration:400,
+	  	outDuration:400,
+	  	startingTop:'50%',
+	  });
 })

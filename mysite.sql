@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Янв 18 2018 г., 09:50
--- Версия сервера: 5.6.34
--- Версия PHP: 5.6.29
+-- Время создания: Янв 18 2018 г., 17:42
+-- Версия сервера: 5.5.53
+-- Версия PHP: 5.5.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -1644,7 +1644,46 @@ INSERT INTO `modx_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, 
 (195, 1, '2018-01-18 09:25:05', 'chunk_update', 'modChunk', '40'),
 (196, 1, '2018-01-18 09:25:05', 'propertyset_update_from_element', 'modChunk', '40'),
 (197, 1, '2018-01-18 09:26:56', 'chunk_update', 'modChunk', '40'),
-(198, 1, '2018-01-18 09:26:56', 'propertyset_update_from_element', 'modChunk', '40');
+(198, 1, '2018-01-18 09:26:56', 'propertyset_update_from_element', 'modChunk', '40'),
+(199, 1, '2018-01-18 15:43:03', 'login', 'modContext', 'mgr'),
+(200, 1, '2018-01-18 16:35:02', 'chunk_update', 'modChunk', '40'),
+(201, 1, '2018-01-18 16:35:03', 'propertyset_update_from_element', 'modChunk', '40'),
+(202, 1, '2018-01-18 16:35:21', 'chunk_update', 'modChunk', '40'),
+(203, 1, '2018-01-18 16:38:04', 'chunk_update', 'modChunk', '40'),
+(204, 1, '2018-01-18 16:38:04', 'propertyset_update_from_element', 'modChunk', '40'),
+(205, 1, '2018-01-18 16:38:13', 'chunk_update', 'modChunk', '40'),
+(206, 1, '2018-01-18 16:38:13', 'propertyset_update_from_element', 'modChunk', '40'),
+(207, 1, '2018-01-18 16:38:22', 'chunk_update', 'modChunk', '40'),
+(208, 1, '2018-01-18 16:38:23', 'propertyset_update_from_element', 'modChunk', '40'),
+(209, 1, '2018-01-18 16:38:32', 'chunk_update', 'modChunk', '40'),
+(210, 1, '2018-01-18 16:38:32', 'propertyset_update_from_element', 'modChunk', '40'),
+(211, 1, '2018-01-18 16:38:53', 'chunk_update', 'modChunk', '40'),
+(212, 1, '2018-01-18 16:38:54', 'propertyset_update_from_element', 'modChunk', '40'),
+(213, 1, '2018-01-18 16:43:59', 'chunk_update', 'modChunk', '40'),
+(214, 1, '2018-01-18 16:44:00', 'propertyset_update_from_element', 'modChunk', '40'),
+(215, 1, '2018-01-18 16:45:17', 'chunk_update', 'modChunk', '40'),
+(216, 1, '2018-01-18 16:45:17', 'propertyset_update_from_element', 'modChunk', '40'),
+(217, 1, '2018-01-18 17:00:29', 'chunk_update', 'modChunk', '40'),
+(218, 1, '2018-01-18 17:00:29', 'propertyset_update_from_element', 'modChunk', '40'),
+(219, 1, '2018-01-18 17:00:57', 'chunk_create', 'modChunk', '45'),
+(220, 1, '2018-01-18 17:02:02', 'chunk_update', 'modChunk', '40'),
+(221, 1, '2018-01-18 17:02:02', 'propertyset_update_from_element', 'modChunk', '40'),
+(222, 1, '2018-01-18 17:21:10', 'chunk_update', 'modChunk', '40'),
+(223, 1, '2018-01-18 17:21:10', 'propertyset_update_from_element', 'modChunk', '40'),
+(224, 1, '2018-01-18 17:23:34', 'chunk_update', 'modChunk', '45'),
+(225, 1, '2018-01-18 17:23:35', 'propertyset_update_from_element', 'modChunk', '45'),
+(226, 1, '2018-01-18 17:26:11', 'chunk_update', 'modChunk', '45'),
+(227, 1, '2018-01-18 17:26:12', 'propertyset_update_from_element', 'modChunk', '45'),
+(228, 1, '2018-01-18 17:26:19', 'chunk_update', 'modChunk', '45'),
+(229, 1, '2018-01-18 17:26:20', 'propertyset_update_from_element', 'modChunk', '45'),
+(230, 1, '2018-01-18 17:27:27', 'tv_create', 'modTemplateVar', '3'),
+(231, 1, '2018-01-18 17:31:39', 'tv_update', 'modTemplateVar', '3'),
+(232, 1, '2018-01-18 17:31:39', 'propertyset_update_from_element', 'modTemplateVar', '3'),
+(233, 1, '2018-01-18 17:31:47', 'tv_update', 'modTemplateVar', '3'),
+(234, 1, '2018-01-18 17:31:48', 'propertyset_update_from_element', 'modTemplateVar', '3'),
+(235, 1, '2018-01-18 17:33:39', 'resource_update', 'modResource', '1'),
+(236, 1, '2018-01-18 17:35:12', 'resource_update', 'modResource', '1'),
+(237, 1, '2018-01-18 17:36:26', 'resource_update', 'modResource', '1');
 
 -- --------------------------------------------------------
 
@@ -1692,6 +1731,13 @@ CREATE TABLE `modx_media_sources_elements` (
   `object` int(11) UNSIGNED NOT NULL DEFAULT '0',
   `context_key` varchar(100) NOT NULL DEFAULT 'web'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `modx_media_sources_elements`
+--
+
+INSERT INTO `modx_media_sources_elements` (`source`, `object_class`, `object`, `context_key`) VALUES
+(1, 'modTemplateVar', 3, 'web');
 
 -- --------------------------------------------------------
 
@@ -2141,7 +2187,7 @@ CREATE TABLE `modx_session` (
 --
 
 INSERT INTO `modx_session` (`id`, `access`, `data`) VALUES
-('ji5vuc4o46f52vsj0o73oov822', 1516258186, 'modx.user.contextTokens|a:0:{}');
+('7qq7upmkvt51l5a4449t1rggv3', 1516286273, 'modx.user.0.resourceGroups|a:1:{s:3:\"mgr\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"mgr\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}modx.user.contextTokens|a:0:{}');
 
 -- --------------------------------------------------------
 
@@ -2200,7 +2246,7 @@ CREATE TABLE `modx_site_content` (
 --
 
 INSERT INTO `modx_site_content` (`id`, `type`, `contentType`, `pagetitle`, `longtitle`, `description`, `alias`, `link_attributes`, `published`, `pub_date`, `unpub_date`, `parent`, `isfolder`, `introtext`, `content`, `richtext`, `template`, `menuindex`, `searchable`, `cacheable`, `createdby`, `createdon`, `editedby`, `editedon`, `deleted`, `deletedon`, `deletedby`, `publishedon`, `publishedby`, `menutitle`, `donthit`, `privateweb`, `privatemgr`, `content_dispo`, `hidemenu`, `class_key`, `context_key`, `content_type`, `uri`, `uri_override`, `hide_children_in_tree`, `show_in_tree`, `properties`) VALUES
-(1, 'document', 'text/html', 'Главная', 'Поздравляем!', '', 'index', '', 1, 0, 0, 0, 0, NULL, '<p>You have successfully installed MODX Revolution&nbsp;[[++settings_version]]!</p>\n<p>Now that MODX is installed you can login to the manager to create your templates, manage content and install third party extras to add functionality to your&nbsp;website. </p>\n\n<h2>New to&nbsp;MODX?</h2>\n\n<p>Pages on a MODX site are called <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/resources\">Resources</a>, and are visible on the left-hand side of the manager in the Resources tab. Resources can be nested under other resources, making it easy to create a tree of resources. There are different types of resources for different use&nbsp;cases.</p>\n\n<p>Building your website is done through a combination of <b>Templates</b>, <b>Template Variables</b>, <b>Chunks</b>, <b>Snippets</b> and <b>Plugins</b>. Collectively these are known as <b>Elements</b>, and can also be found in the left-hand side of the manager, in the Elements&nbsp;tab.</p>\n\n<p><a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/templates\">Templates</a> contain the outer markup of any page. Each resource can only be assigned to a single template at a time. By adding <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/customizing-content/template-variables\">Template Variables</a> to a template, you can add custom fields for any resource using that particular&nbsp;template.</p>\n\n<p>With <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/chunks\">Chunks</a> you can share parts of the markup, such as a header, across different templates. <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/using-snippets\">Snippets</a> are pieces of PHP that return dynamic content, such as summaries of other resources or the current date. With snippets, you will often use Chunks to mark up the pieces of content it returns, instead of mixing the PHP and&nbsp;HTML.</p>\n\n<p>Finally, <a href=\"https://rtfm.modx.com/revolution/2.x/developing-in-modx/basic-development/plugins\">Plugins</a> enable more advanced features by hooking into the extensive events system provided by&nbsp;MODX.</p>\n\n<p>To learn more about MODX, be sure to check out the <a href=\"https://rtfm.modx.com/revolution/2.x/getting-started\">Getting Started</a> section in the official&nbsp;documentation.</p>\n', 1, 1, 0, 1, 1, 1, 1507010063, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 'modDocument', 'web', 1, 'index.html', 0, 0, 1, NULL),
+(1, 'document', 'text/html', 'Главная', 'Поздравляем!', '', 'index', '', 1, 0, 0, 0, 0, '', '<p>You have successfully installed MODX Revolution&nbsp;[[++settings_version]]!</p>\r\n<p>Now that MODX is installed you can login to the manager to create your templates, manage content and install third party extras to add functionality to your&nbsp;website.</p>\r\n<h2>New to&nbsp;MODX?</h2>\r\n<p>Pages on a MODX site are called <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/resources\">Resources</a>, and are visible on the left-hand side of the manager in the Resources tab. Resources can be nested under other resources, making it easy to create a tree of resources. There are different types of resources for different use&nbsp;cases.</p>\r\n<p>Building your website is done through a combination of <strong>Templates</strong>, <strong>Template Variables</strong>, <strong>Chunks</strong>, <strong>Snippets</strong> and <strong>Plugins</strong>. Collectively these are known as <strong>Elements</strong>, and can also be found in the left-hand side of the manager, in the Elements&nbsp;tab.</p>\r\n<p><a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/templates\">Templates</a> contain the outer markup of any page. Each resource can only be assigned to a single template at a time. By adding <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/customizing-content/template-variables\">Template Variables</a> to a template, you can add custom fields for any resource using that particular&nbsp;template.</p>\r\n<p>With <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/chunks\">Chunks</a> you can share parts of the markup, such as a header, across different templates. <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/using-snippets\">Snippets</a> are pieces of PHP that return dynamic content, such as summaries of other resources or the current date. With snippets, you will often use Chunks to mark up the pieces of content it returns, instead of mixing the PHP and&nbsp;HTML.</p>\r\n<p>Finally, <a href=\"https://rtfm.modx.com/revolution/2.x/developing-in-modx/basic-development/plugins\">Plugins</a> enable more advanced features by hooking into the extensive events system provided by&nbsp;MODX.</p>\r\n<p>To learn more about MODX, be sure to check out the <a href=\"https://rtfm.modx.com/revolution/2.x/getting-started\">Getting Started</a> section in the official&nbsp;documentation.</p>', 1, 1, 0, 1, 1, 1, 1507010063, 1, 1516286186, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 'modDocument', 'web', 1, 'index.html', 0, 0, 1, NULL),
 (2, 'document', 'text/html', 'Blog', '', 'Demo blog container page for Blogit.', 'blog', '', 1, 0, 0, 0, 1, '', '<h1>Blog overview</h1>', 1, 2, 2, 1, 1, 1, 1507010784, 1, 1507028127, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 1, 'CollectionContainer', 'web', 1, 'blog/', 0, 0, 1, NULL),
 (3, 'document', 'text/html', 'Post 1', '', 'Demo post 1 for the BlogIt extra.', 'post-1', '', 0, 0, 0, 2, 0, 'Demo summary of post 2 for the BlogIt extra.', '<p>Demo content of post 2 for the BlogIt extra.</p>', 1, 3, 0, 1, 1, 1, 1507010784, 1, 1507028115, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 'modDocument', 'web', 1, 'post-1.html', 0, 0, 0, NULL),
 (4, 'document', 'text/html', 'Post 2', '', 'Demo post 2 for the BlogIt extra.', 'post-2', '', 0, 0, 0, 2, 0, 'Demo summary of post 2 for the BlogIt extra.', '<p>Demo content of post 2 for the BlogIt extra.</p>', 1, 3, 1, 1, 1, 1, 1507010784, 1, 1507028117, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 'modDocument', 'web', 1, 'post-2.html', 0, 0, 0, NULL),
@@ -2280,11 +2326,12 @@ INSERT INTO `modx_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `na
 (37, 1, 0, 'Header', '', 0, 22, 0, '<header>\n	\n    <div class=\"Logo\"><i class=\"fa fa-free-code-camp\" aria-hidden=\"true\"></i>Logotype</div>\n			<a href=\"#my-menu\" class=\"hamburger hamburger--emphatic visible-xs\">\n				<span class=\"hamburger-box\"><span class=\"hamburger-inner\"></span></span>\n			</a>\n					<nav id=\"my-menu\">\n						[[Wayfinder?\n						&startId=`0`\n						&level=`1`\n						&outerTpl=`tpl.Wayfinder.outer`\n						&parentRowTpl=`tpl.Wayfinder.row.parent`\n						&innerRowTpl=`tpl.Wayfinder.row.inner`\n						&rowTpl=`tpl.Wayfinder.row`\n						\n					]]\n					</nav>\n				\n				[[$Login]]\n			\n</header>', 0, 'a:0:{}', 0, ''),
 (38, 0, 0, 'Login', '', 0, 12, 0, '<div class=\"clearfix\"></div>\n<section class=\"main-login\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-xs-12\">[[!Login? &loginTpl=`lgnLoginTpl` &logoutTpl=`lgnLogoutTpl` &errTpl=`lgnErrTpl` &loginResourceId=`1` &logoutResourceId=`1`]]</div>\n        </div>\n    </div>\n</section>', 0, NULL, 0, ''),
 (39, 1, 0, 'Main unreg', '', 0, 22, 0, '', 0, 'a:0:{}', 0, ''),
-(40, 1, 0, 'Content', '', 0, 22, 0, '\n  <nav>\n    <div class=\"nav-wrapper\">\n      <a href=\"#\" class=\"brand-logo center\">Logo</a>\n      <a href=\"#\" data-activates=\"mobile-demo\" class=\"button-collapse\"><i class=\"material-icons\">menu</i></a>\n      <ul id=\"nav-mobile\" class=\"right hide-on-med-and-down\">\n        <li class=\"active\"><a href=\"sass.html\">Sass</a></li>\n        <li><a href=\"badges.html\">Components</a></li>\n        <li><a href=\"collapsible.html\">JavaScript</a></li>\n      </ul>\n      <ul id=\"mobile-demo\" class=\"side-nav\">\n        <li class=\"active\"><a href=\"sass.html\">Sass</a></li>\n        <li><a href=\"badges.html\">Components</a></li>\n        <li><a href=\"collapsible.html\">JavaScript</a></li>\n      </ul>\n    </div>\n  </nav>\n<div class=\"full-width\">\n  <div class=\"carousel carousel-slider\">\n    <a href=\"#one!\" class=\"carousel-item\"><img src=\"[[++assets_url]]templates/Stas/app/img/1.jpg\" alt=\"\"></a>\n    <a href=\"#one!\" class=\"carousel-item\"><img src=\"[[++assets_url]]templates/Stas/app/img/2.jpg\" alt=\"\"></a>\n    <a href=\"#one!\" class=\"carousel-item\"><img src=\"[[++assets_url]]templates/Stas/app/img/3.jpg\" alt=\"\"></a>\n\n  </div>\n</div>\n<div class=\"container\">\n<div class=\"row\">\n        <div class=\"col s12 m6\">\n          <div class=\"card blue-grey darken-1 hoverable\">\n            <div class=\"card-content white-text\">\n              <span class=\"card-title\">Card Title</span>\n              <p>I am a very simple card. I am good at containing small bits of information.\n              I am convenient because I require little markup to use effectively.</p>\n            </div>\n            <div class=\"card-action\">\n              <a href=\"#\">This is a link</a>\n              <a href=\"#\">This is a link</a>\n            </div>\n          </div>\n        </div>\n      \n      \n      \n        <div class=\"col s12 m6\">\n          <div class=\"card\">\n            <div class=\"card-image\">\n              <img src=\"[[++assets_url]]templates/Stas/app/img/1.jpg\">\n              <span class=\"card-title\">Card Title</span>\n            </div>\n            <div class=\"card-content\">\n              <p>I am a very simple card. I am good at containing small bits of information.\n              I am convenient because I require little markup to use effectively.</p>\n            </div>\n            <div class=\"card-action\">\n              <a href=\"#\">This is a link</a>\n            </div>\n          </div>\n        </div>\n    </div>\n    </div>', 0, 'a:0:{}', 0, ''),
+(40, 1, 0, 'Content', '', 0, 22, 0, '<nav>\n    <div class=\"nav-wrapper\">\n      <a href=\"#!\" class=\"brand-logo\">Logo</a>\n      <a href=\"#\" data-activates=\"mobile-demo\" class=\"button-collapse\"><i class=\"material-icons\">menu</i></a>\n      <ul class=\"right hide-on-med-and-down\">\n        <li><a href=\"sass.html\">Sass</a></li>\n        <li><a href=\"badges.html\">Components</a></li>\n        <li><a href=\"collapsible.html\">Javascript</a></li>\n        <li><a class=\"modal-trigger\" href=\"#modal1\">Mobile</a></li>\n      </ul>\n      <ul class=\"side-nav\" id=\"mobile-demo\">\n        <li><a href=\"sass.html\">Sass</a></li>\n        <li><a href=\"badges.html\">Components</a></li>\n        <li><a href=\"collapsible.html\">Javascript</a></li>\n       <li><a class=\"modal-trigger\" href=\"#modal1\">Mobile</a></li>\n      </ul>\n    </div>\n  </nav>\n  <div class=\"carousel carousel-slider\">\n    <a class=\"carousel-item\" href=\"#!\"><img src=\"[[++assets_url]]templates/Stas/app/img/1.jpg\"></a>\n    <a class=\"carousel-item\" href=\"#!\"><img src=\"[[++assets_url]]templates/Stas/app/img/2.jpg\"></a>\n    <a class=\"carousel-item\" href=\"#!\"><img src=\"[[++assets_url]]templates/Stas/app/img/3.jpg\"></a>\n  </div>\n  <div class=\"parallax-container\">\n    <div class=\"parallax\"><img src=\"[[++assets_url]]templates/Stas/app/img/3.jpg\"></div>\n  </div>\n  <div class=\"section white\">\n    <div class=\"row container\">\n      <h1 class=\"header\">ghjhjhj</h1>\n      <p class=\"grey-text text-darken-3\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae numquam, laudantium vero doloremque neque, explicabo quod. Nam itaque ratione illo, quaerat tempora fugiat porro, nihil.</p>\n    </div>\n  </div>\n  <div class=\"container\">\n    <div class=\"row\">\n      [[!getImageList?\n                      &tvname=`cards`\n                      &tpl=`cards`\n                      &docid=`1`\n                      ]] \n\n\n</div>\n</div>\n<div class=\"container anim\">\n  <div class=\"row\">\n  <div class=\"col m6\">\n    <a href=\"#!\" class=\"btn btn-lage waves-effect waves-purple\" onclick=\"Materialize.fadeInImage(\'#fade-img\')\"><i class=\"material-icons\"></i>Click</a>\n    <br>\n    <img src=\"[[++assets_url]]templates/Stas/app/img/2.jpg\" alt=\"\" id=\"fade-img\" style=\"opacity:0;\">\n  </div>\n  \n\n\n  <div class=\"col m6\">\n    <a href=\"#!\" class=\"btn btn-lage waves-effect waves-purple\" onclick=\"Materialize.showStaggeredList(\'#test1\')\"><i class=\"material-icons\"></i>Click</a>\n   <ul id=\"test1\">\n     <li style=\"opacity: 0;\">ghjh1</li>\n     <li style=\"opacity: 0;\">ghjh2</li>\n     <li style=\"opacity: 0;\">ghjh3</li>\n     <li style=\"opacity: 0;\">ghjh4</li>\n   </ul>\n  </div></div>\n</div>\n<div class=\"container\">\n  <div class=\"row\">\n    <a href=\"#!\" class=\"btn btn-floating pulse\"><i class=\"material-icons\">menu</i></a>\n  </div>\n</div>\n<footer class=\"page-footer\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col l6 s12\">\n        <h5 class=\"white-text\">Content</h5>\n        <p class=\"grey-text text-lighten-4\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, voluptate, beatae! Tempore inventore possimus est eligendi, ea, quidem quo. Odio repudiandae nulla facilis, vel, incidunt sit veniam beatae commodi quibusdam non! Voluptas animi nesciunt dolor accusantium quos voluptatum tenetur nulla labore exercitationem nihil nemo facilis officia ipsum, reprehenderit. Ex, libero.</p>\n      </div>\n      <div class=\"col l6 offset-12 s12\">\n        <h5 class=\"white-text\">Links</h5>\n        <ul>\n          <li class=\"grey-text text-lighten-3\">link1</li>\n          <li class=\"grey-text text-lighten-3\">link2</li>\n          <li class=\"grey-text text-lighten-3\">link3</li>\n          <li class=\"grey-text text-lighten-3\">link4</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n  <div class=\"footer-copyright\">\n    <div class=\"container\">\n      <div class=\"row\">@copyStanruss\n  <a href=\"#!\" class=\"grey-text text-lighten-3 right\">More links</a></div>\n    </div>\n  </div>\n</footer>\n<div id=\"modal1\" class=\"modal\">\n  <div class=\"modal-content\">\n    <div class=\"row\">\n      <form action=\"\" class=\"col s12\">\n        <div class=\"row\">\n          <div class=\"input-field col s6\">\n            <i class=\"material-icons prefix\">account_circle</i>\n            <input type=\"text\" class=\"validate\" placeholder=\"Name\" id=\"first_name\">\n\n          </div>\n          <div class=\"input-field col s6\">\n            <i class=\"material-icons prefix\">account_circle</i>\n            <input type=\"text\" class=\"validate\" placeholder=\"Last Name\" id=\"last_name\">\n\n          </div>\n        </div>\n        <div class=\"row\">\n          <div class=\"input-field col s12\">\n            <i class=\"material-icons prefix\">mail</i>\n            <input type=\"email\" id=\"email\" class=\"validate\">\n          </div>\n        </div>\n        <div class=\"row\">\n          <div class=\"input-field col s12\">\n            <i class=\"material-icons prefix\">lock</i>\n            <input type=\"password\" id=\"password\" class=\"password\">\n          </div>\n        </div>\n\n      </form>\n    </div>\n  </div>\n  <div class=\"modal-footer\">\n    <a href=\"#!\" class=\"modal-action modal-close waves-effect waves-green btn-flat green\">Agree</a>\n  </div>\n</div>\n             \n  ', 0, 'a:0:{}', 0, ''),
 (41, 1, 0, 'Main', '', 0, 22, 0, '', 0, 'a:0:{}', 0, ''),
 (42, 1, 0, 'Footer', '', 0, 22, 0, '<footer class=\"main-footer\">\n  \n</footer>', 0, 'a:0:{}', 0, ''),
 (43, 1, 0, 'Up', '', 0, 22, 0, '<div id=\"upbutton\"><span>Наверх</span><i class=\"fa fa-chevron-right\" aria-hidden=\"true\"></i></div>', 0, 'a:0:{}', 0, ''),
-(44, 1, 0, 'Scripts', '', 0, 22, 0, ' <!--Import Google Icon Font-->\n  <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n  <!--Import materialize.css-->\n  <link type=\"text/css\" rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/css/materialize.min.css\"  media=\"screen,projection\"/>\n    \n<script type=\"text/javascript\" src=\"https://code.jquery.com/jquery-3.2.1.min.js\"></script>\n  <script type=\"text/javascript\" src=\"[[++assets_url]]templates/Stas/app/js/materialize.min.js\"></script>\n  <script type=\"text/javascript\" src=\"[[++assets_url]]templates/Stas/app/js/common.js\"></script>\n \n\n', 0, 'a:0:{}', 0, '');
+(44, 1, 0, 'Scripts', '', 0, 22, 0, ' <!--Import Google Icon Font-->\n  <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n  <!--Import materialize.css-->\n  <link type=\"text/css\" rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/css/materialize.min.css\"  media=\"screen,projection\"/>\n    \n<script type=\"text/javascript\" src=\"https://code.jquery.com/jquery-3.2.1.min.js\"></script>\n  <script type=\"text/javascript\" src=\"[[++assets_url]]templates/Stas/app/js/materialize.min.js\"></script>\n  <script type=\"text/javascript\" src=\"[[++assets_url]]templates/Stas/app/js/common.js\"></script>\n \n\n', 0, 'a:0:{}', 0, ''),
+(45, 0, 0, 'cards', '', 0, 22, 0, '<div class=\"[[+col]]\"><div class=\"card hoverable small\">\n    <div class=\"card-image\">\n     <img src=\"[[phpthumbof? &input=`[[+image]]` &options=`zc1`]]\" alt=\"team 1\">\n      <span class=\"card-title\">[[+card title]]</span>\n    </div>\n    <div class=\"card-content\">\n      <p>[[+p]]</p>\n    </div>\n    <div class=\"card-action\"><a href=\"[[+link]]\">link blog</a></div>\n  </div>\n</div>', 0, 'a:0:{}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -2596,7 +2643,8 @@ CREATE TABLE `modx_site_tmplvars` (
 
 INSERT INTO `modx_site_tmplvars` (`id`, `source`, `property_preprocess`, `type`, `name`, `caption`, `description`, `editor_type`, `category`, `locked`, `elements`, `rank`, `display`, `default_text`, `properties`, `input_properties`, `output_properties`, `static`, `static_file`) VALUES
 (1, 0, 0, 'image', 'blogit.post_main_image', 'Main image', 'Select the main image to show with this post, leave blank for no image, a re-sized verzion will be shown on the blog post overview.', 0, 7, 0, '', 1, 'default', '', 'a:0:{}', 'a:0:{}', 'a:0:{}', 0, ''),
-(2, 0, 0, 'text', 'blogit.post_main_image_alt', 'Alt text for the main image', 'Fill in a description of the image (used mostly for Google).', 0, 7, 0, '', 2, 'default', '', 'a:0:{}', 'a:3:{s:10:\"allowBlank\";s:4:\"true\";s:9:\"maxLength\";s:0:\"\";s:9:\"minLength\";s:0:\"\";}', 'a:0:{}', 0, '');
+(2, 0, 0, 'text', 'blogit.post_main_image_alt', 'Alt text for the main image', 'Fill in a description of the image (used mostly for Google).', 0, 7, 0, '', 2, 'default', '', 'a:0:{}', 'a:3:{s:10:\"allowBlank\";s:4:\"true\";s:9:\"maxLength\";s:0:\"\";s:9:\"minLength\";s:0:\"\";}', 'a:0:{}', 0, ''),
+(3, 0, 0, 'migx', 'cards', '', '', 0, 0, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:7:\"configs\";s:0:\"\";s:8:\"formtabs\";s:245:\"[\n{\"caption\":\"Tab Title\", \"fields\": [\n{\"field\":\"col\",\"caption\":\"col\"},\n{\"field\":\"image\",\"caption\":\"Image\",\"inputTVtype\":\"image\"},\n{\"field\":\"card title\",\"caption\":\"card title\"},\n{\"field\":\"link\",\"caption\":\"link\"},\n{\"field\":\"p\",\"caption\":\"p\"}\n\n]}\n]\";s:7:\"columns\";s:361:\"[\n{\"header\": \"Image\", \"width\": \"50\", \"sortable\": \"false\", \"dataIndex\": \"image\",\"renderer\": \"this.renderImage\"},\n{\"header\": \"col\", \"sortable\": \"true\", \"dataIndex\": \"col\"},\n{\"header\": \"card title\", \"sortable\": \"true\", \"dataIndex\": \"card title\"},\n{\"header\": \"link\", \"sortable\": \"true\", \"dataIndex\": \"link\"},\n{\"header\": \"p\", \"sortable\": \"true\", \"dataIndex\": \"p\"}\n\n]\";s:7:\"btntext\";s:0:\"\";s:10:\"previewurl\";s:0:\"\";s:10:\"jsonvarkey\";s:0:\"\";s:19:\"autoResourceFolders\";s:5:\"false\";}', 'a:0:{}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -2629,7 +2677,8 @@ CREATE TABLE `modx_site_tmplvar_contentvalues` (
 
 INSERT INTO `modx_site_tmplvar_contentvalues` (`id`, `tmplvarid`, `contentid`, `value`) VALUES
 (1, 1, 3, 'assets/components/blogit/img/blogit_post_img.png'),
-(2, 2, 3, 'BlogIt logo');
+(2, 2, 3, 'BlogIt logo'),
+(3, 3, 1, '[{\"MIGX_id\":\"1\",\"col\":\"col s12 m6 l3\",\"image\":\"assets/templates/Stas/app/img/1.jpg\",\"card title\":\"card title1\",\"link\":\"#\",\"p\":\"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"},{\"MIGX_id\":\"2\",\"col\":\"col s12 m6 l3\",\"image\":\"assets/templates/Stas/app/img/2.jpg\",\"card title\":\"card title 2\",\"link\":\"#\",\"p\":\"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"},{\"MIGX_id\":\"3\",\"col\":\"col s12 m6 l3\",\"image\":\"assets/templates/Stas/app/img/3.jpg\",\"card title\":\"card title3\",\"link\":\"#\",\"p\":\"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"},{\"MIGX_id\":\"4\",\"col\":\"col s12 m6 l3\",\"image\":\"assets/templates/Stas/app/img/2.jpg\",\"card title\":\"card title4\",\"link\":\"#\",\"p\":\"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"}]');
 
 -- --------------------------------------------------------
 
@@ -2649,7 +2698,8 @@ CREATE TABLE `modx_site_tmplvar_templates` (
 
 INSERT INTO `modx_site_tmplvar_templates` (`tmplvarid`, `templateid`, `rank`) VALUES
 (1, 3, 0),
-(2, 3, 0);
+(2, 3, 0),
+(3, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -3532,7 +3582,7 @@ CREATE TABLE `modx_user_attributes` (
 --
 
 INSERT INTO `modx_user_attributes` (`id`, `internalKey`, `fullname`, `email`, `phone`, `mobilephone`, `blocked`, `blockeduntil`, `blockedafter`, `logincount`, `lastlogin`, `thislogin`, `failedlogincount`, `sessionid`, `dob`, `gender`, `address`, `country`, `city`, `state`, `zip`, `fax`, `photo`, `comment`, `website`, `extended`) VALUES
-(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 16, 1516255968, 1516256451, 0, 'g3bg7v8g0d4vgi31ishve6pee6', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
+(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 17, 1516256451, 1516279383, 0, '43c7598kpt9he1nnp4jbpr93a7', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
 (2, 2, '', 'stan1978@gmail.com', '', '', 0, 0, 0, 3, 1507027219, 1516255911, 0, '9lkho41cebf6ndm6o7a5ovqgg0', 0, 1, '', '', 'Тверь', '', '19000', '', '', '', '', '[]');
 
 -- --------------------------------------------------------
@@ -4669,7 +4719,7 @@ ALTER TABLE `modx_lexicon_entries`
 -- AUTO_INCREMENT для таблицы `modx_manager_log`
 --
 ALTER TABLE `modx_manager_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=199;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=238;
 --
 -- AUTO_INCREMENT для таблицы `modx_media_sources`
 --
@@ -4744,7 +4794,7 @@ ALTER TABLE `modx_site_content`
 -- AUTO_INCREMENT для таблицы `modx_site_htmlsnippets`
 --
 ALTER TABLE `modx_site_htmlsnippets`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 --
 -- AUTO_INCREMENT для таблицы `modx_site_plugins`
 --
@@ -4764,7 +4814,7 @@ ALTER TABLE `modx_site_templates`
 -- AUTO_INCREMENT для таблицы `modx_site_tmplvars`
 --
 ALTER TABLE `modx_site_tmplvars`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT для таблицы `modx_site_tmplvar_access`
 --
@@ -4774,7 +4824,7 @@ ALTER TABLE `modx_site_tmplvar_access`
 -- AUTO_INCREMENT для таблицы `modx_site_tmplvar_contentvalues`
 --
 ALTER TABLE `modx_site_tmplvar_contentvalues`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT для таблицы `modx_tagger_groups`
 --
