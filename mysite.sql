@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Янв 18 2018 г., 09:14
+-- Время создания: Янв 18 2018 г., 09:50
 -- Версия сервера: 5.6.34
 -- Версия PHP: 5.6.29
 
@@ -1633,7 +1633,18 @@ INSERT INTO `modx_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, 
 (184, 1, '2018-01-18 09:02:40', 'chunk_update', 'modChunk', '40'),
 (185, 1, '2018-01-18 09:02:40', 'propertyset_update_from_element', 'modChunk', '40'),
 (186, 2, '2018-01-18 09:11:51', 'login', 'modContext', 'mgr'),
-(187, 1, '2018-01-18 09:12:48', 'login', 'modContext', 'mgr');
+(187, 1, '2018-01-18 09:12:48', 'login', 'modContext', 'mgr'),
+(188, 1, '2018-01-18 09:20:51', 'login', 'modContext', 'mgr'),
+(189, 1, '2018-01-18 09:22:12', 'chunk_update', 'modChunk', '40'),
+(190, 1, '2018-01-18 09:22:12', 'propertyset_update_from_element', 'modChunk', '40'),
+(191, 1, '2018-01-18 09:23:16', 'chunk_update', 'modChunk', '40'),
+(192, 1, '2018-01-18 09:23:17', 'propertyset_update_from_element', 'modChunk', '40'),
+(193, 1, '2018-01-18 09:23:48', 'chunk_update', 'modChunk', '40'),
+(194, 1, '2018-01-18 09:23:48', 'propertyset_update_from_element', 'modChunk', '40'),
+(195, 1, '2018-01-18 09:25:05', 'chunk_update', 'modChunk', '40'),
+(196, 1, '2018-01-18 09:25:05', 'propertyset_update_from_element', 'modChunk', '40'),
+(197, 1, '2018-01-18 09:26:56', 'chunk_update', 'modChunk', '40'),
+(198, 1, '2018-01-18 09:26:56', 'propertyset_update_from_element', 'modChunk', '40');
 
 -- --------------------------------------------------------
 
@@ -2130,7 +2141,7 @@ CREATE TABLE `modx_session` (
 --
 
 INSERT INTO `modx_session` (`id`, `access`, `data`) VALUES
-('qb7i48njp0nd6agcu3a0kh93a0', 1516256051, 'modx.user.contextTokens|a:0:{}');
+('ji5vuc4o46f52vsj0o73oov822', 1516258186, 'modx.user.contextTokens|a:0:{}');
 
 -- --------------------------------------------------------
 
@@ -2269,7 +2280,7 @@ INSERT INTO `modx_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `na
 (37, 1, 0, 'Header', '', 0, 22, 0, '<header>\n	\n    <div class=\"Logo\"><i class=\"fa fa-free-code-camp\" aria-hidden=\"true\"></i>Logotype</div>\n			<a href=\"#my-menu\" class=\"hamburger hamburger--emphatic visible-xs\">\n				<span class=\"hamburger-box\"><span class=\"hamburger-inner\"></span></span>\n			</a>\n					<nav id=\"my-menu\">\n						[[Wayfinder?\n						&startId=`0`\n						&level=`1`\n						&outerTpl=`tpl.Wayfinder.outer`\n						&parentRowTpl=`tpl.Wayfinder.row.parent`\n						&innerRowTpl=`tpl.Wayfinder.row.inner`\n						&rowTpl=`tpl.Wayfinder.row`\n						\n					]]\n					</nav>\n				\n				[[$Login]]\n			\n</header>', 0, 'a:0:{}', 0, ''),
 (38, 0, 0, 'Login', '', 0, 12, 0, '<div class=\"clearfix\"></div>\n<section class=\"main-login\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-xs-12\">[[!Login? &loginTpl=`lgnLoginTpl` &logoutTpl=`lgnLogoutTpl` &errTpl=`lgnErrTpl` &loginResourceId=`1` &logoutResourceId=`1`]]</div>\n        </div>\n    </div>\n</section>', 0, NULL, 0, ''),
 (39, 1, 0, 'Main unreg', '', 0, 22, 0, '', 0, 'a:0:{}', 0, ''),
-(40, 1, 0, 'Content', '', 0, 22, 0, '\n  <nav>\n    <div class=\"nav-wrapper\">\n      <a href=\"#\" class=\"brand-logo center\">Logo</a>\n      <a href=\"#\" data-activates=\"mobile-demo\" class=\"button-collapse\"><i class=\"material-icons\">menu</i></a>\n      <ul id=\"nav-mobile\" class=\"right hide-on-med-and-down\">\n        <li class=\"active\"><a href=\"sass.html\">Sass</a></li>\n        <li><a href=\"badges.html\">Components</a></li>\n        <li><a href=\"collapsible.html\">JavaScript</a></li>\n      </ul>\n      <ul id=\"mobile-demo\" class=\"side-nav\">\n        <li class=\"active\"><a href=\"sass.html\">Sass</a></li>\n        <li><a href=\"badges.html\">Components</a></li>\n        <li><a href=\"collapsible.html\">JavaScript</a></li>\n      </ul>\n    </div>\n  </nav>\n<div class=\"full-width\">\n  <div class=\"carousel carousel-slider\">\n    <a href=\"#one!\" class=\"carousel-item\"><img src=\"[[++assets_url]]templates/Stas/app/img/1.jpg\" alt=\"\"></a>\n    <a href=\"#one!\" class=\"carousel-item\"><img src=\"[[++assets_url]]templates/Stas/app/img/2.jpg\" alt=\"\"></a>\n    <a href=\"#one!\" class=\"carousel-item\"><img src=\"[[++assets_url]]templates/Stas/app/img/3.jpg\" alt=\"\"></a>\n\n  </div>\n</div>', 0, 'a:0:{}', 0, ''),
+(40, 1, 0, 'Content', '', 0, 22, 0, '\n  <nav>\n    <div class=\"nav-wrapper\">\n      <a href=\"#\" class=\"brand-logo center\">Logo</a>\n      <a href=\"#\" data-activates=\"mobile-demo\" class=\"button-collapse\"><i class=\"material-icons\">menu</i></a>\n      <ul id=\"nav-mobile\" class=\"right hide-on-med-and-down\">\n        <li class=\"active\"><a href=\"sass.html\">Sass</a></li>\n        <li><a href=\"badges.html\">Components</a></li>\n        <li><a href=\"collapsible.html\">JavaScript</a></li>\n      </ul>\n      <ul id=\"mobile-demo\" class=\"side-nav\">\n        <li class=\"active\"><a href=\"sass.html\">Sass</a></li>\n        <li><a href=\"badges.html\">Components</a></li>\n        <li><a href=\"collapsible.html\">JavaScript</a></li>\n      </ul>\n    </div>\n  </nav>\n<div class=\"full-width\">\n  <div class=\"carousel carousel-slider\">\n    <a href=\"#one!\" class=\"carousel-item\"><img src=\"[[++assets_url]]templates/Stas/app/img/1.jpg\" alt=\"\"></a>\n    <a href=\"#one!\" class=\"carousel-item\"><img src=\"[[++assets_url]]templates/Stas/app/img/2.jpg\" alt=\"\"></a>\n    <a href=\"#one!\" class=\"carousel-item\"><img src=\"[[++assets_url]]templates/Stas/app/img/3.jpg\" alt=\"\"></a>\n\n  </div>\n</div>\n<div class=\"container\">\n<div class=\"row\">\n        <div class=\"col s12 m6\">\n          <div class=\"card blue-grey darken-1 hoverable\">\n            <div class=\"card-content white-text\">\n              <span class=\"card-title\">Card Title</span>\n              <p>I am a very simple card. I am good at containing small bits of information.\n              I am convenient because I require little markup to use effectively.</p>\n            </div>\n            <div class=\"card-action\">\n              <a href=\"#\">This is a link</a>\n              <a href=\"#\">This is a link</a>\n            </div>\n          </div>\n        </div>\n      \n      \n      \n        <div class=\"col s12 m6\">\n          <div class=\"card\">\n            <div class=\"card-image\">\n              <img src=\"[[++assets_url]]templates/Stas/app/img/1.jpg\">\n              <span class=\"card-title\">Card Title</span>\n            </div>\n            <div class=\"card-content\">\n              <p>I am a very simple card. I am good at containing small bits of information.\n              I am convenient because I require little markup to use effectively.</p>\n            </div>\n            <div class=\"card-action\">\n              <a href=\"#\">This is a link</a>\n            </div>\n          </div>\n        </div>\n    </div>\n    </div>', 0, 'a:0:{}', 0, ''),
 (41, 1, 0, 'Main', '', 0, 22, 0, '', 0, 'a:0:{}', 0, ''),
 (42, 1, 0, 'Footer', '', 0, 22, 0, '<footer class=\"main-footer\">\n  \n</footer>', 0, 'a:0:{}', 0, ''),
 (43, 1, 0, 'Up', '', 0, 22, 0, '<div id=\"upbutton\"><span>Наверх</span><i class=\"fa fa-chevron-right\" aria-hidden=\"true\"></i></div>', 0, 'a:0:{}', 0, ''),
@@ -3521,7 +3532,7 @@ CREATE TABLE `modx_user_attributes` (
 --
 
 INSERT INTO `modx_user_attributes` (`id`, `internalKey`, `fullname`, `email`, `phone`, `mobilephone`, `blocked`, `blockeduntil`, `blockedafter`, `logincount`, `lastlogin`, `thislogin`, `failedlogincount`, `sessionid`, `dob`, `gender`, `address`, `country`, `city`, `state`, `zip`, `fax`, `photo`, `comment`, `website`, `extended`) VALUES
-(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 15, 1516253820, 1516255968, 0, 'a5681c4m8tadtbs3sg8b82u1b3', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
+(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 16, 1516255968, 1516256451, 0, 'g3bg7v8g0d4vgi31ishve6pee6', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
 (2, 2, '', 'stan1978@gmail.com', '', '', 0, 0, 0, 3, 1507027219, 1516255911, 0, '9lkho41cebf6ndm6o7a5ovqgg0', 0, 1, '', '', 'Тверь', '', '19000', '', '', '', '', '[]');
 
 -- --------------------------------------------------------
@@ -4658,7 +4669,7 @@ ALTER TABLE `modx_lexicon_entries`
 -- AUTO_INCREMENT для таблицы `modx_manager_log`
 --
 ALTER TABLE `modx_manager_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=188;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=199;
 --
 -- AUTO_INCREMENT для таблицы `modx_media_sources`
 --

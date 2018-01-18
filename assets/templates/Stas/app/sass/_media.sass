@@ -13,69 +13,13 @@
 	/**/
 			
 @media (min-width : 768px)
-	html
-		header.site-header
-			height: 71px	
-			background-color: $main-color
-			.Logo
-				float: left		
-	.mm-menu.mm-offcanvas
-		display: block
-		position: relative
-		width: 70%
-		float: right
-		max-width: none 
-		z-index: 20	
-	.mm-panels, .mm-panels>.mm-panel
-		position: relative
-		height: 71px
-		background-color: $main-color
-	.mm-panels>.mm-panel.mm-hasnavbar
-		padding-top: 0
-	.mm-panel.mm-hasnavbar .mm-navbar
-		display: none
-	.mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
-		margin-top: 0
-	.mm-listview>li:not(.mm-divider):after
-		border: none 
-	.mm-listview, .mm-listview>li
-		float: left
-	.mm-panels>.mm-panel>.mm-listview
-		margin-bottom: 0
-		height: 71px
-	.mm-panels>.mm-panel:after, .mm-panels>.mm-panel:before
-		height: 0
-	.mm-listview>li>a, .mm-listview>li>span
-		line-height: 51px
+	/**/
 		
 
 
 
 @media (min-width : 240px) and (max-width : 767px)
-	html
-		header
-			.Logo
-				float: right	
-				@include margin(80px, right)
-			.hamburger 
-				position: relative
-				z-index: 3
-		.mm-menu.mm-theme-white .mm-listview>li
-			width: 92%
-			float: left
-			a:not(.mm-next)
-				color: #000
-				float: left
-			&:after
-				top: 40px
-				background-color: $main-color
-				width: 100%
-				height: 1px
-			&:hover
-				background-color: $main-color
-				transition: all 0.5s ease
-			&.active
-				background-color: $main-color
+	/**/
 		
 @media only screen and (max-width : 480px)
 	.animated
@@ -97,10 +41,7 @@
 
 
 @media only screen and (min-width : 768px)
-	html
-		header
-			.Logo
-				float: left
+	/**/
 
 
 @media only screen and (min-width : 992px)
@@ -111,29 +52,5 @@
 @media only screen and (min-width : 1200px)
 	/**/
 @media (min-width : 240px) and (max-width : 991px)
-	html 
-		header
-		.main-login
-			.loginLoginFieldset
-				min-width: 240px
-				width: 240px
-				@include push-auto
-				@include border(1px, $white, all)
-				@include border-radius(3px, all)
-				@include margin(25px, top-bottom)
-				float: none
-				.forg	
-					float: none
-					line-height: 25px
-				.loginUsernameLabel, .loginPasswordLabel, .loginLoginButton, .forg
-					display: block
-					width: 220px
-					@include margin(10px, right-left)
-					@include margin(5px, top-bottom)
-				button
-					position: relative
-					left: 50%
-					@include margin(-77px, left)
-					margin-top: 15px
-		
+	/**/
 						
