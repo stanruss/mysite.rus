@@ -14,3 +14,4 @@ $( document ).ready(function(){
 	  	startingTop:'50%',
 	  });
 })
+
