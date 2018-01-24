@@ -4,6 +4,8 @@ var	postcss      = require('gulp-postcss');
 var	assets       = require('postcss-assets');
 var	nested       = require('postcss-nested');
 var	short        = require('postcss-short');
+var concat       = require('gulp-concat');
+var	uglify       = require('gulp-uglify');
 var	cssnano      = require('gulp-cssnano');
 var	cssnext      = require('postcss-cssnext');
 var	autoprefixer = require('gulp-autoprefixer');
@@ -41,7 +43,17 @@ gulp.task('sass', function() {
 	.pipe(gulp.dest('assets/templates/Stas/app/css'))
 	.pipe(browserSync.reload({stream: true}));
 });
-gulp.task('watch', ['sass', 'browser-sync'], function() {
+gulp.task('libs', function() {
+	return gulp.src([
+		'assets/templates/Stas/app/js/jquery-3.2.1.min.js',
+		'assets/templates/Stas/app/js/initial.js'
+		
+		])
+		.pipe(concat('libs.min.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('assets/templates/Stas/app/js'));
+});
+gulp.task('watch', ['sass', 'libs','browser-sync'], function() {
 	gulp.watch('assets/templates/Stas/app/sass/**/*.sass', ['sass']);
 	gulp.watch('*.php', browserSync.reload);
 });
