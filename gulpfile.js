@@ -45,8 +45,7 @@ gulp.task('sass', function() {
 });
 gulp.task('libs', function() {
 	return gulp.src([
-		'assets/templates/Stas/app/js/jquery-3.2.1.min.js',
-		'assets/templates/Stas/app/js/initial.js'
+		'assets/templates/Stas/app/js/jquery-3.2.1.min.js'
 		
 		])
 		.pipe(concat('libs.min.js'))

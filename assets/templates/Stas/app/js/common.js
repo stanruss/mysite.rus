@@ -13,10 +13,7 @@ $( document ).ready(function(){
 	  	outDuration:400,
 	  	startingTop:'50%',
 	  });
-	$('.fixed-action-btn').openFAB();
-  $('.fixed-action-btn').closeFAB();
-  $('.fixed-action-btn.toolbar').openToolbar();
-  $('.fixed-action-btn.toolbar').closeToolbar();
+	
   $('.chips').material_chip();
   $('.chips-initial').material_chip({
     data: [{
