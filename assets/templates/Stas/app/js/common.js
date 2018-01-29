@@ -7,7 +7,7 @@ $( document ).ready(function(){
 	 });
 	  $('.parallax').parallax();
 	  $('.modal').modal({
-	  	dismissible:false,
+	  	dismissible:true,
 	  	opacity:.9,
 	  	inDuration:400,
 	  	outDuration:400,
